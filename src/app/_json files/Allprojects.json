@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "title": "Book Note",
+    "description": "A digital ledger app designed for freelancers and small businesses to track income, expenses, and invoices with ease. Built with security and simplicity in mind.",
+    "points": [
+      "Clean UI",
+      "Built with security",
+      "Visual breakdown of monthly income & expenses."
+    ],
+    "image": "/project1.png",
+    "tech": [
+      { "icons": "xd.svg", "name": "Vercel" },
+      { "icons": "xd.svg", "name": "React" }
+    ],
+    "category": "Web Development"
+  },
+  {
+    "id": 2,
+    "title": "Outfitted",
+    "description": "Clothing ecommerce site optimized for mobile.",
+    "points": ["Wishlist & cart", "Next.js + Stripe"],
+    "image": "/project2.png",
+    "tech": [
+      { "icons": "xd.svg", "name": "vercel" },
+      { "icons": "Xd.svg", "name": "React" }
+    ],
+    "category": "Web Development"
+  },
+  {
+    "id": 3,
+    "title": "Portfolio Redesign",
+    "description": "A modern redesign of a personal portfolio focused on accessibility, readability, and smooth animations. Prototyped in Figma and handed off with design systems.",
+    "points": [
+      "Clean component-based layout",
+      "Accessibility-focused colors",
+      "Prototype interactions and transitions"
+    ],
+    "image": "/uiux1.png",
+    "tech": [
+      { "icons": "figma.svg", "name": "Figma" },
+      { "icons": "xd.svg", "name": "Adobe XD" }
+    ],
+    "category": "UI/UX Design"
+  },
+  {
+    "id": 4,
+    "title": "Mobile App UI Kit",
+    "description": "A complete UI kit for a habit tracking mobile app, featuring atomic design elements, dark/light modes, and reusable components.",
+    "points": [
+      "Dark & light theme",
+      "Atomic design principles",
+      "Fully responsive prototypes"
+    ],
+    "image": "/uiux2.png",
+    "tech": [
+      { "icons": "figma.svg", "name": "Figma" },
+      { "icons": "xd.svg", "name": "Adobe XD" }
+    ],
+    "category": "UI/UX Design"
+  },
+  {
+    "id": 5,
+    "title": "Music Festival Poster",
+    "description": "A vibrant and dynamic poster series for an electronic music festival, using bold typography and abstract gradients to capture the mood.",
+    "points": [
+      "Poster & social banners",
+      "Print & digital formats",
+      "Gradient and glow effects"
+    ],
+    "image": "/graphic1.png",
+    "tech": [
+      { "icons": "photoshop.svg", "name": "Photoshop" },
+      { "icons": "illustrator.svg", "name": "Illustrator" }
+    ],
+    "category": "Graphic Design"
+  },
+  {
+    "id": 6,
+    "title": "Brand Identity for Café",
+    "description": "Logo design, menu layout, and packaging concept for a minimalist-themed coffee shop. Focus on earthy tones and hand-drawn illustrations.",
+    "points": [
+      "Custom logo design",
+      "Menu & packaging mockups",
+      "Organic visual style"
+    ],
+    "image": "/graphic2.png",
+    "tech": [
+      { "icons": "illustrator.svg", "name": "Illustrator" },
+      { "icons": "indesign.svg", "name": "InDesign" }
+    ],
+    "category": "Graphic Design"
+  }
+]

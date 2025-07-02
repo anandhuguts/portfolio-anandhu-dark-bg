@@ -1,0 +1,78 @@
+[
+  {
+    "title": "HTML 5",
+    "icon": "HTML logo.svg"
+  },
+  {
+    "title": "CSS",
+    "icon": "file_type_css2 logo.svg"
+  },
+  {
+    "title": "JavaScript",
+    "icon": "javascript logo.svg"
+  },
+  {
+    "title": "React JS",
+    "icon": "reacticon.svg"
+  },
+  {
+    "title": "SCSS",
+    "icon": "sass.svg"
+  },
+  {
+    "title": "Redux",
+    "icon": "redux.svg"
+  },
+  {
+    "title": "Tailwind",
+    "icon": "tailwindsr.svg"
+  },
+  {
+    "title": "Node JS",
+    "icon": "skill-icons_nodejs-dark.svg"
+  },
+  {
+    "title": "Express JS",
+    "icon": "skill-icons_expressjs-darks.svg"
+  },
+  {
+    "title": "Mongo DB",
+    "icon": "skill-icons_mongodb.svg"
+  },
+  {
+    "title": "Mongoose",
+    "icon": "devicon_mongoose-wordmark.svg"
+  },
+  {
+    "title": "Postgres SQL",
+    "icon": "devicon_postgresql.svg"
+  },
+  {
+    "title": "GIT",
+    "icon": "skill-icons_git.svg"
+  },
+  {
+    "title": "GIT Hub",
+    "icon": "github logo.svg"
+  },
+  {
+    "title": "Figma",
+    "icon": "figma logo.svg"
+  },
+  {
+    "title": "Adobe XD",
+    "icon": "xd.svg"
+  },
+  {
+    "title": "Illustrator",
+    "icon": "illustrator logo.svg"
+  },
+  {
+    "title": "Photoshop",
+    "icon": "photoshop-original logo.svg"
+  },
+  {
+    "title": "After Effects",
+    "icon": "after-effects-1 logo.svg"
+  }
+]

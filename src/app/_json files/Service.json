@@ -1,0 +1,49 @@
+[
+  {
+    "title": "React & Next.js Developer",
+    "description": "Building fast, scalable web interfaces with React and Next.js—specialized in dynamic UIs, smooth routing, and interactive experiences.",
+    "icons": ["react.svg", "nextjs.svg", "vercel2.svg"]
+  },
+  {
+    "title": "MERN Stack Developer",
+    "description": "Developing full-stack apps with MongoDB, Express, React, and Node.js. Delivering scalable solutions with secure APIs and clean backend logic.",
+    "icons": [
+      "mongodb.svg",
+      "skill-icons_expressjs-dark.svg",
+      "react.svg",
+      "teenyicons_nodejs-solid.svg"
+    ]
+  },
+  {
+    "title": "UI/UX Designer",
+    "description": "Designing intuitive interfaces with Figma, emphasizing usability, accessibility, and smooth user flows across all screen sizes.",
+    "icons": [
+      "file-icons_adobe-xd.svg",
+      "icon-park-solid_figma.svg",
+      "mingcute_notion-fill.svg"
+    ]
+  },
+  {
+    "title": "Graphic Designer",
+    "description": "I create visuals like logos, posters, and social media graphics using Photoshop and Illustrator — combining creativity with brand consistency.",
+    "icons": [
+      "mage_photoshop.svg",
+      "mage_illustrator.svg",
+      "streamline-logos_adobe-indesign-logo-block.svg"
+    ]
+  },
+  {
+    "title": "Responsive Web Design",
+    "description": "Crafting adaptive layouts with Tailwind CSS and Flexbox to ensure consistent user experiences across all devices.",
+    "icons": [
+      "ri_html5-fill.svg",
+      "teenyicons_tailwind-solid.svg",
+      "akar-icons_css-fill.svg"
+    ]
+  },
+  {
+    "title": "Interaction & Prototyping",
+    "description": "Bringing interfaces to life with animations, transitions, and micro-interactions using Figma, GSAP, or Framer Motion.",
+    "icons": ["icon-park-solid_figma.svg", "devicon_framermotion.svg"]
+  }
+]
