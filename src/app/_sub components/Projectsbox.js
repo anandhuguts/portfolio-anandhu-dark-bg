@@ -203,7 +203,6 @@ export default function ScrollProjects({ projects }) {
             </AnimatePresence>
           </div>
         </div>
-        +*-
       </div>
 
       {/* for mobile screens */}
