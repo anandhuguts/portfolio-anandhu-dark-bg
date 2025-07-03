@@ -19,7 +19,9 @@
       },
       { "icons": "Vercel.svg", "name": "Vercel" }
     ],
-    "category": "Web Development"
+    "category": "Web Development",
+    "figma": "https://www.figma.com/design/brEC5PuMwlkSmVRyFzPrdL/portfolio-anandhu-Design-2?node-id=0-1&m=dev&t=MkPMtY8lHrJsU506-1",
+    "github": "https://github.com/anandhuguts/portfolio-anandhu-dark-bg"
   },
   {
     "id": 2,
@@ -36,7 +38,10 @@
       { "icons": "javascript logo.svg", "name": "JavaScript" },
       { "icons": "file_type_css2 logo.svg", "name": "CSS" }
     ],
-    "category": "Web Development"
+    "category": "Web Development",
+    "figma": "https://www.figma.com/design/D0o810Rd1ALqQ5CSvp1pCy/huluwebsite?node-id=0-1&m=dev&t=DtYZumhET1st7i83-1",
+    "github": "https://github.com/anandhuguts/hulu-landing-page",
+    "website": "https://hulu-landing-page-eight.vercel.app/"
   },
   {
     "id": 3,
@@ -113,7 +118,7 @@
     ],
     "image": "/Screenshot 2025-06-26 144033.png",
     "tech": [
-      { "icons": "react.svg", "name": "React" },
+      { "icons": "reacticon.svg", "name": "React" },
       { "icons": "tailwind.svg", "name": "Tailwind" },
       {
         "icons": "streamline-logos_framer-logo-block.svg",
@@ -121,6 +126,9 @@
       },
       { "icons": "Vercel.svg", "name": "Vercel" }
     ],
-    "category": "Web Development"
+    "category": "Web Development",
+    "website": "https://anandhu-portfolio.vercel.app/",
+    "figma": "https://www.figma.com/design/prq0DdRPdMXo8hPMQzQnoZ/anandhu-portfolio-website?node-id=0-1&m=dev&t=EPOTzZFyRCjWlPzx-1",
+    "github": "https://github.com/anandhuguts/anandhu-portfolio"
   }
 ]

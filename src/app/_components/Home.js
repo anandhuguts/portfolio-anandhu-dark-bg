@@ -35,35 +35,42 @@ function Home() {
       </h2>
       <div className="mt-5 font-medium flex gap-7 max-[428px]:flex-col max-[428px]:gap-4">
         <ContactButton />
-        <button className=" flex justify-center items-center px-5 text-primary py-2 rounded-full gap-2.5 bg-[#161616]/40 border  border-[#313131] overflow-hidden ">
-          Resume
-          <svg
-            width="17"
-            height="17"
-            viewBox="0 0 17 17"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8.5 2.83334H9.91667V7.08334H11.6875L8.5 10.2708M8.5 2.83334H7.08333V7.08334H5.3125L8.5 10.2708"
-              fill="#FAFAFA"
-            />
-            <path
-              d="M8.5 2.83334H9.91667V7.08334H11.6875L8.5 10.2708L5.3125 7.08334H7.08333V2.83334H8.5Z"
-              stroke="#FAFAFA"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M4.25 13.4583H12.75"
-              stroke="#FAFAFA"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
+        <a
+          href="https://drive.google.com/file/d/160-4h6GyyokJ4g8c76S6rASr8bRD90U2/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block"
+        >
+          <button className=" flex justify-center items-center px-5 text-primary py-2 rounded-full gap-2.5 bg-[#161616]/40 border  border-[#313131] overflow-hidden ">
+            Resume
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8.5 2.83334H9.91667V7.08334H11.6875L8.5 10.2708M8.5 2.83334H7.08333V7.08334H5.3125L8.5 10.2708"
+                fill="#FAFAFA"
+              />
+              <path
+                d="M8.5 2.83334H9.91667V7.08334H11.6875L8.5 10.2708L5.3125 7.08334H7.08333V2.83334H8.5Z"
+                stroke="#FAFAFA"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M4.25 13.4583H12.75"
+                stroke="#FAFAFA"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </button>
+        </a>
       </div>
       <div className="relative flex mx-auto w-full xl:max-w-[1350px] lg:w-full  px-5 h-[420px]  ">
         <motion.div

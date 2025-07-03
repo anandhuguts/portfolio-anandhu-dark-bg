@@ -100,7 +100,17 @@ export default function ScrollProjects({ projects }) {
                   style={{
                     backgroundImage: `url('${project.image}')`,
                   }}
-                ></div>
+                >
+                  {/* <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    quality={100}
+                    className="object-cover "
+                    sizes="(max-width: 768px) 100vw, 700px "
+                    priority={idx === 0} // Prioritize first project for LCP
+                  /> */}
+                </div>
               </motion.div>
             ))}
           </div>
@@ -164,39 +174,72 @@ export default function ScrollProjects({ projects }) {
                   ))}
                 </div>
                 <div className="flex items-center gap-5 mt-7">
-                  <button className="bg-primary  text-[16px]  flex items-center px-5 text-black py-2 rounded-full gap-2.5">
-                    Visit Project
-                    <svg
-                      className="text-white"
-                      width="17"
-                      height="17"
-                      viewBox="0 0 17 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.39872 2.59873C9.61125 2.38626 9.89946 2.26691 10.2 2.26691C10.5005 2.26691 10.7887 2.38626 11.0012 2.59873L16.1012 7.69873C16.3137 7.91126 16.4331 8.19948 16.4331 8.5C16.4331 8.80052 16.3137 9.08873 16.1012 9.30127L11.0012 14.4013C10.7875 14.6077 10.5012 14.7219 10.2041 14.7194C9.90691 14.7168 9.62265 14.5976 9.41252 14.3875C9.20239 14.1773 9.0832 13.8931 9.08062 13.5959C9.07804 13.2988 9.19227 13.0125 9.39872 12.7987L12.4666 9.63333H1.69998C1.3994 9.63333 1.11114 9.51393 0.898596 9.30139C0.686055 9.08884 0.56665 8.80058 0.56665 8.5C0.56665 8.19942 0.686055 7.91115 0.898596 7.69861C1.11114 7.48607 1.3994 7.36667 1.69998 7.36667H12.4666L9.39872 4.20126C9.18625 3.98873 9.06689 3.70052 9.06689 3.4C9.06689 3.09948 9.18625 2.81126 9.39872 2.59873Z"
-                        fill="black"
-                      />
-                    </svg>
-                  </button>
+                  <a
+                    href={
+                      projects[activeIndex].website
+                        ? projects[activeIndex].website
+                        : ""
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                  >
+                    <button className="bg-primary  text-[16px]  flex items-center px-5 text-black py-2 rounded-full gap-2.5">
+                      Visit Project
+                      <svg
+                        className="text-white"
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.39872 2.59873C9.61125 2.38626 9.89946 2.26691 10.2 2.26691C10.5005 2.26691 10.7887 2.38626 11.0012 2.59873L16.1012 7.69873C16.3137 7.91126 16.4331 8.19948 16.4331 8.5C16.4331 8.80052 16.3137 9.08873 16.1012 9.30127L11.0012 14.4013C10.7875 14.6077 10.5012 14.7219 10.2041 14.7194C9.90691 14.7168 9.62265 14.5976 9.41252 14.3875C9.20239 14.1773 9.0832 13.8931 9.08062 13.5959C9.07804 13.2988 9.19227 13.0125 9.39872 12.7987L12.4666 9.63333H1.69998C1.3994 9.63333 1.11114 9.51393 0.898596 9.30139C0.686055 9.08884 0.56665 8.80058 0.56665 8.5C0.56665 8.19942 0.686055 7.91115 0.898596 7.69861C1.11114 7.48607 1.3994 7.36667 1.69998 7.36667H12.4666L9.39872 4.20126C9.18625 3.98873 9.06689 3.70052 9.06689 3.4C9.06689 3.09948 9.18625 2.81126 9.39872 2.59873Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </button>
+                  </a>
                   <div className="flex items-center gap-3">
-                    <div className="relative w-[30px] h-[30px]">
-                      <Image
-                        src="/figma logo.svg" // Make sure it's in the `public` folder
-                        alt="Logo"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <div className="relative w-[30px] h-[30px]">
-                      <Image
-                        src="/github logo.svg" // Make sure it's in the `public` folder
-                        alt="Logo"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
+                    <a
+                      href={
+                        projects[activeIndex].figma
+                          ? projects[activeIndex].figma
+                          : ""
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                    >
+                      <div className="relative w-[30px] h-[30px]">
+                        <Image
+                          src="/figma logo.svg" // Make sure it's in the `public` folder
+                          alt="Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    </a>
+                    <a
+                      href={
+                        projects[activeIndex].github
+                          ? projects[activeIndex].github
+                          : ""
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                    >
+                      <div className="relative w-[30px] h-[30px]">
+                        <Image
+                          src="/github logo.svg" // Make sure it's in the `public` folder
+                          alt="Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    </a>
                   </div>
                 </div>
               </motion.div>
@@ -263,39 +306,60 @@ export default function ScrollProjects({ projects }) {
               </div>
               <div className="flex w-full items-center  gap-5 justify-between mt-6  ">
                 <div className="flex items-center gap-3">
-                  <div className="relative w-[24px] h-[24px]">
-                    <Image
-                      src="/figma logo.svg" // Make sure it's in the `public` folder
-                      alt="Logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <div className="relative w-[24px] h-[24px]">
-                    <Image
-                      src="/github logo.svg" // Make sure it's in the `public` folder
-                      alt="Logo"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-                <button className="bg-primary font-medium max-[865px]:text-[18px] max-[428px]:!text-[14px] text-[16px] max-[428px]:!p-2.5  flex items-center px-5 text-black py-2 rounded-full gap-2.5">
-                  Visit Project
-                  <svg
-                    className="text-white"
-                    width="12"
-                    height="12"
-                    viewBox="0 0 17 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <a
+                    href={project.figma ? project.figma : ""}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block"
                   >
-                    <path
-                      d="M9.39872 2.59873C9.61125 2.38626 9.89946 2.26691 10.2 2.26691C10.5005 2.26691 10.7887 2.38626 11.0012 2.59873L16.1012 7.69873C16.3137 7.91126 16.4331 8.19948 16.4331 8.5C16.4331 8.80052 16.3137 9.08873 16.1012 9.30127L11.0012 14.4013C10.7875 14.6077 10.5012 14.7219 10.2041 14.7194C9.90691 14.7168 9.62265 14.5976 9.41252 14.3875C9.20239 14.1773 9.0832 13.8931 9.08062 13.5959C9.07804 13.2988 9.19227 13.0125 9.39872 12.7987L12.4666 9.63333H1.69998C1.3994 9.63333 1.11114 9.51393 0.898596 9.30139C0.686055 9.08884 0.56665 8.80058 0.56665 8.5C0.56665 8.19942 0.686055 7.91115 0.898596 7.69861C1.11114 7.48607 1.3994 7.36667 1.69998 7.36667H12.4666L9.39872 4.20126C9.18625 3.98873 9.06689 3.70052 9.06689 3.4C9.06689 3.09948 9.18625 2.81126 9.39872 2.59873Z"
-                      fill="black"
-                    />
-                  </svg>
-                </button>
+                    <div className="relative w-[24px] h-[24px]">
+                      <Image
+                        src="/figma logo.svg" // Make sure it's in the `public` folder
+                        alt="Logo"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href={project.github ? project.github : ""}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block"
+                  >
+                    <div className="relative w-[24px] h-[24px]">
+                      <Image
+                        src="/github logo.svg" // Make sure it's in the `public` folder
+                        alt="Logo"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <a
+                  href={project.website ? project.website : ""}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <button className="bg-primary font-medium max-[865px]:text-[18px] max-[428px]:!text-[14px] text-[16px] max-[428px]:!p-2.5  flex items-center px-5 text-black py-2 rounded-full gap-2.5">
+                    Visit Project
+                    <svg
+                      className="text-white"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 17 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.39872 2.59873C9.61125 2.38626 9.89946 2.26691 10.2 2.26691C10.5005 2.26691 10.7887 2.38626 11.0012 2.59873L16.1012 7.69873C16.3137 7.91126 16.4331 8.19948 16.4331 8.5C16.4331 8.80052 16.3137 9.08873 16.1012 9.30127L11.0012 14.4013C10.7875 14.6077 10.5012 14.7219 10.2041 14.7194C9.90691 14.7168 9.62265 14.5976 9.41252 14.3875C9.20239 14.1773 9.0832 13.8931 9.08062 13.5959C9.07804 13.2988 9.19227 13.0125 9.39872 12.7987L12.4666 9.63333H1.69998C1.3994 9.63333 1.11114 9.51393 0.898596 9.30139C0.686055 9.08884 0.56665 8.80058 0.56665 8.5C0.56665 8.19942 0.686055 7.91115 0.898596 7.69861C1.11114 7.48607 1.3994 7.36667 1.69998 7.36667H12.4666L9.39872 4.20126C9.18625 3.98873 9.06689 3.70052 9.06689 3.4C9.06689 3.09948 9.18625 2.81126 9.39872 2.59873Z"
+                        fill="black"
+                      />
+                    </svg>
+                  </button>
+                </a>
               </div>
             </motion.div>
           </div>
