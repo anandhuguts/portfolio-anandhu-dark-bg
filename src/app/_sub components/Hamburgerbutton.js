@@ -128,11 +128,11 @@ export const HamburgerButton = () => {
       <Hamburger toggled={isOpen} toggle={setOpen} color="#FAFAFA" size={25} />
 
       <div
-        className={`px-4 font-outfit overflow-y-hidden fixed top-0 left-0 h-screen w-full bg-[#0A0A0A] text-white z-50 transform transition-transform duration-500 ease-in-out ${
-          isOpen ? "translate-y-[84px]" : "-translate-y-full"
+        className={`px-7 font-outfit overflow-y-hidden fixed top-0 left-0 h-screen w-full bg-[#0A0A0A] text-white z-5 transform transition-transform duration-500 ease-in-out ${
+          isOpen ? "translate-y-[0px]" : "-translate-y-full"
         }`}
       >
-        <div className="w-full h-screen relative">
+        <div className="w-full h-screen relative overflow-y-hidden">
           {/* <div className="pl-[28px] flex items-center gap-6">
             <div className="relative w-[53px] h-[44px]">
               <Image
@@ -149,11 +149,18 @@ export const HamburgerButton = () => {
               </p>
             </div>
           </div> */}
-
-          <span
+          <div className="w-full flex justify-end pt-9">
+            <Hamburger
+              toggled={isOpen}
+              toggle={setOpen}
+              color="#FAFAFA"
+              size={25}
+            />
+          </div>
+          {/* <span
             className="block w-full bg-[#313131] h-[1px] mt-.5n
           "
-          ></span>
+          ></span> */}
           <ul className="mt-4">
             {navItems.map((item) => (
               <li key={item.name} className="mt-[20px]">
@@ -168,16 +175,16 @@ export const HamburgerButton = () => {
                 >
                   {item.svg}
                   <div>
-                    <span className={`font-semibold text-[22px]  `}>
+                    <span className={`font-semibold text-[18px]  `}>
                       {item.name}
                     </span>
-                    <p className="font-regular text-[15px]">{item.details}</p>
+                    <p className="font-regular text-[13px]">{item.details}</p>
                   </div>
                 </Link>
               </li>
             ))}
           </ul>
-          <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2">
+          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
             <Socialmedia width={"30"} />
           </div>
         </div>

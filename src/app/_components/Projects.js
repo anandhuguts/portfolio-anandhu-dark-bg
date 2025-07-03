@@ -25,7 +25,7 @@ function Projects() {
           {["Web Development", "UI/UX Design", "Graphic Design"].map((cat) => (
             <button
               key={cat}
-              className={`sm:px-5 sm:py-2 p-2.5 max-sm:text-[13px] rounded-xl border ${
+              className={`sm:px-5 sm:py-2 p-2.5 max-[350px]:!text-[11px] max-sm:text-[12px] rounded-full border ${
                 activeCat === cat
                   ? "border-primary text-primary"
                   : "border-secondary text-secondary"

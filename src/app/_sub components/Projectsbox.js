@@ -220,7 +220,7 @@ export default function ScrollProjects({ projects }) {
               className="w-full max-[428px]:!max-w-[388px] max-[428px]:!h-[235px]  h-[299px] max-[865px]:h-[400px] max-sm:h-[299px] max-[428px]:rounded-[24px]  rounded-[31px] p-[2px] bg-[linear-gradient(135deg,rgba(255,255,255,0.9)_0%,rgba(150,150,150,0.3)_100%)] shadow-xl"
             >
               <div
-                className="w-full h-full  border-15 border-[#121212] bg-cover rounded-[31px]  bg-center bg-no-repeat max-[428px]:rounded-[24px]   flex flex-col  "
+                className="w-full h-full  border-10 border-[#121212] bg-cover rounded-[31px]  bg-center bg-no-repeat max-[428px]:rounded-[24px]   flex flex-col  "
                 style={{ backgroundImage: "url('nextjsprotfoliopreview.png')" }}
               ></div>
             </motion.div>

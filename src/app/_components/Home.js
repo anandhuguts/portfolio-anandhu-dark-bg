@@ -11,7 +11,7 @@ import ContactButton from "../_sub components/Button";
 function Home() {
   return (
     <section className="mx-auto flex flex-col items-center font-outfit  text-primary pt-25 px-10 max-sm:px-5 lg:px-0">
-      <div className=" sm:text-[16px] text-[14px] font-semibold   p-2 border bg-[#161616]/40  text-primary border-[#313131] rounded-full ">
+      <div className=" sm:text-[16px]  max-[428px]:!text-[12px] max-sm:text-[14px] font-semibold   p-2 border bg-[#161616]/40  text-primary border-[#313131] rounded-full ">
         🎯 MERN Stack Specialist
       </div>
 
