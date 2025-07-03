@@ -5,7 +5,7 @@ import Overview from "./_components/Overview";
 import Projects from "./_components/Projects";
 import Skills from "./_components/Skills";
 
-export default function Page() {
+export default async function Page() {
   return (
     <main>
       <Home />

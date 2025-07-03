@@ -105,3 +105,15 @@ body {
   border-right-color: #b7c7d7;
   animation: rotate 1s infinite linear;
 }
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.spinner-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; /* optional: background */
+}
