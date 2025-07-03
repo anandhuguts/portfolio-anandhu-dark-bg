@@ -98,7 +98,7 @@ export default function ScrollProjects({ projects }) {
                 <div
                   className="w-full h-full  border-15 border-[#121212] bg-cover rounded-[41px]  bg-center bg-no-repeat  flex flex-col  "
                   style={{
-                    backgroundImage: "url('nextjsprotfoliopreview.png')",
+                    backgroundImage: `url('${project.image}')`,
                   }}
                 ></div>
               </motion.div>
@@ -106,7 +106,7 @@ export default function ScrollProjects({ projects }) {
           </div>
 
           {/* Right: Sticky Description */}
-          <div className="w-[500px] sticky top-32 h-fit align-top">
+          <div className="max-w-[500px] sticky top-32 h-fit align-top">
             <AnimatePresence mode="wait">
               <motion.div
                 key={projects[activeIndex].id}
@@ -115,17 +115,17 @@ export default function ScrollProjects({ projects }) {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.4 }}
               >
-                <h2 className="text-[36px] font-bold ">
+                <h2 className="text-[30px] font-semibold ">
                   {projects[activeIndex].title}
                 </h2>
                 <p className="text-secondary text-[18px] font-normal mb-4">
                   {projects[activeIndex].description}
                 </p>
-                <ul className="space-y-4 ">
+                <ul className="space-y-2  ">
                   {projects[activeIndex].points.map((point, i) => (
                     <li
                       key={i}
-                      className="flex items-center gap-3 text-[16px] font-normal text-primary "
+                      className="flex items-center gap-3 text-[16px] font-normal text-primary  "
                     >
                       <span>
                         <svg
@@ -145,11 +145,11 @@ export default function ScrollProjects({ projects }) {
                     </li>
                   ))}
                 </ul>
-                <div className="flex  items-center gap-3 mt-7.5">
+                <div className="flex flex-wrap  items-center gap-3 mt-7.5">
                   {projects[activeIndex].tech.map((tech, index) => (
                     <div
                       key={index}
-                      className=" w-fit flex py-1.5 px-5 border gap-[8px] rounded-[8px] border-[#454545] bg-[#171717] justify-center items-center"
+                      className="  flex py-1.5 px-5 border gap-[8px] rounded-[8px] border-[#454545] bg-[#171717] justify-center items-center"
                     >
                       <div className=" relative w-[17px] h-[16px]">
                         <Image
@@ -221,7 +221,7 @@ export default function ScrollProjects({ projects }) {
             >
               <div
                 className="w-full h-full  border-10 border-[#121212] bg-cover rounded-[31px]  bg-center bg-no-repeat max-[428px]:rounded-[24px]   flex flex-col  "
-                style={{ backgroundImage: "url('nextjsprotfoliopreview.png')" }}
+                style={{ backgroundImage: `url('${project.image}')` }}
               ></div>
             </motion.div>
             <motion.div
@@ -241,7 +241,7 @@ export default function ScrollProjects({ projects }) {
                 {project.description}
               </p>
 
-              <div className="flex  items-center gap-3 mt-5.5 max-[428px]:mt-3">
+              <div className="flex flex-wrap  items-center gap-3 mt-5.5 max-[428px]:mt-3">
                 {project.tech.map((tech, index) => (
                   <div
                     key={index}

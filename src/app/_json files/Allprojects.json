@@ -1,29 +1,40 @@
 [
   {
     "id": 1,
-    "title": "Book Note",
-    "description": "A digital ledger app designed for freelancers and small businesses to track income, expenses, and invoices with ease. Built with security and simplicity in mind.",
+    "title": "Portfolio Website",
+    "description": "A personal portfolio website to showcase my skills, projects, and experience as a MERN Stack Developer and UI/UX Designer. Built using Next.js and designed in Figma, this project reflects my passion for clean, intuitive interfaces and modern development best practices.",
     "points": [
+      "Designed from scratch in Figma",
       "Clean UI",
-      "Built with security",
-      "Visual breakdown of monthly income & expenses."
+      "Designed with a desktop-first approach and fully responsive across all devices.",
+      "Integrated reusable components and modular design for scalability."
     ],
-    "image": "/project1.png",
+    "image": "/nextjsprotfoliopreview.png",
     "tech": [
-      { "icons": "xd.svg", "name": "Vercel" },
-      { "icons": "xd.svg", "name": "React" }
+      { "icons": "skill-icons_nextjs-light.svg", "name": "NextJS" },
+      { "icons": "tailwind.svg", "name": "Tailwind" },
+      {
+        "icons": "streamline-logos_framer-logo-block.svg",
+        "name": "Framer Motion"
+      },
+      { "icons": "Vercel.svg", "name": "Vercel" }
     ],
     "category": "Web Development"
   },
   {
     "id": 2,
-    "title": "Outfitted",
-    "description": "Clothing ecommerce site optimized for mobile.",
-    "points": ["Wishlist & cart", "Next.js + Stripe"],
-    "image": "/project2.png",
+    "title": "Hulu Landing Page Clone",
+    "description": "A pixel-perfect clone of Hulu's homepage built using pure HTML, CSS, and JavaScript. This project emphasizes responsive layout, modern web standards, and dynamic UI without any libraries.",
+    "points": [
+      "How to build responsive UIs with flexbox",
+      "Handling click events in vanilla JavaScript",
+      " Manual DOM manipulation without libraries"
+    ],
+    "image": "/Screenshot 2025-07-03 195745.png",
     "tech": [
-      { "icons": "xd.svg", "name": "vercel" },
-      { "icons": "Xd.svg", "name": "React" }
+      { "icons": "HTML logo.svg", "name": "HTML" },
+      { "icons": "javascript logo.svg", "name": "JavaScript" },
+      { "icons": "file_type_css2 logo.svg", "name": "CSS" }
     ],
     "category": "Web Development"
   },
@@ -90,5 +101,26 @@
       { "icons": "indesign.svg", "name": "InDesign" }
     ],
     "category": "Graphic Design"
+  },
+  {
+    "id": 7,
+    "title": "React Portfolio (Single Page App)",
+    "description": "A minimalist single-page portfolio website created using React.js, focused on smooth UI/UX and component-driven design.",
+    "points": [
+      "Built with React Hooks and component-based architecture",
+      "Smooth scrolling using react-scroll",
+      "Designed from scratch in Figma"
+    ],
+    "image": "/Screenshot 2025-06-26 144033.png",
+    "tech": [
+      { "icons": "react.svg", "name": "React" },
+      { "icons": "tailwind.svg", "name": "Tailwind" },
+      {
+        "icons": "streamline-logos_framer-logo-block.svg",
+        "name": "Framer Motion"
+      },
+      { "icons": "Vercel.svg", "name": "Vercel" }
+    ],
+    "category": "Web Development"
   }
 ]
