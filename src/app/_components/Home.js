@@ -33,7 +33,7 @@ function Home() {
         Hi, I&apos;m Anandhu Prasad — a&nbsp;
         <br className="sm:hidden block" /> <Typewriter />
       </h2>
-      <div className="mt-5 font-medium flex gap-7 max-[428px]:flex-col max-[428px]:gap-5.5">
+      <div className="mt-5 font-medium flex gap-7 max-[428px]:flex-col max-[428px]:gap-4">
         <ContactButton />
         <button className=" flex justify-center items-center px-5 text-primary py-2 rounded-full gap-2.5 bg-[#161616]/40 border  border-[#313131] overflow-hidden ">
           Resume
