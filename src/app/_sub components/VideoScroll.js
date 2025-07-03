@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function ZoomVideoSection() {
+export default function ZoomVideoSection({ videoRef }) {
   const ref = useRef(null);
 
   // Scroll animation setup
@@ -15,6 +15,7 @@ export default function ZoomVideoSection() {
 
   return (
     <motion.div
+      ref={ref}
       style={{ scale }}
       className=" absolute left-1/2 -translate-x-1/2  bottom-1 w-[667px] h-[363px] min-h-[363px] max-w-full mx-auto rounded-[19px] overflow-hidden"
     >

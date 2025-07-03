@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import ShinyText from "../_animations/Shinytext";
+
 import Typewriter from "../_animations/Typewriter";
 import ZoomVideoSection from "../_sub components/VideoScroll";
 import { useRef } from "react";
@@ -9,14 +9,13 @@ import { motion } from "framer-motion";
 import ContactButton from "../_sub components/Button";
 
 function Home() {
-  const ref = useRef(null);
   return (
     <section className="mx-auto flex flex-col items-center font-outfit  text-primary pt-25 px-10 max-sm:px-5 lg:px-0">
-      <div className=" sm:text-[16px] text-[14px] font-semibold   p-2 border bg-[#161616]/40  text-[#FF32D3] border-[#313131] rounded-full ">
+      <div className=" sm:text-[16px] text-[14px] font-semibold   p-2 border bg-[#161616]/40  text-primary border-[#313131] rounded-full ">
         🎯 MERN Stack Specialist
       </div>
 
-      <h1 className="  text-center lg:text-5xl max-[664px]:text-[30px] max-[428px]:text-[27px]  text-[42px] font-outfit font-medium mt-3.5 max-[664px]:leading-[36px] leading-[60px]">
+      <h1 className="  text-center lg:text-5xl max-[664px]:text-[30px] max-[428px]:whitespace-nowrap max-[428px]:text-[27px]  text-[42px] font-outfit font-medium mt-3.5 max-[664px]:leading-[36px] leading-[60px]">
         I design and build intuitive&nbsp;
         <br />
         MERN stack web apps — from&nbsp;
@@ -66,7 +65,7 @@ function Home() {
           </svg>
         </button>
       </div>
-      <div className="relative flex mx-auto w-full xl:max-w-[1350px] lg:w-full  px-5 h-[420px] ">
+      <div className="relative flex mx-auto w-full xl:max-w-[1350px] lg:w-full  px-5 h-[420px]  ">
         <motion.div
           initial={{ x: -300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -102,7 +101,6 @@ function Home() {
         </motion.div>
 
         <motion.div
-          ref={ref}
           initial={{ x: -600, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{
