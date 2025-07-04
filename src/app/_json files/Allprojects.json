@@ -17,7 +17,7 @@
         "icons": "streamline-logos_framer-logo-block.svg",
         "name": "Framer Motion"
       },
-      { "icons": "Vercel.svg", "name": "Vercel" }
+      { "icons": "skill-icons_vercel-dark.svg", "name": "Vercel" }
     ],
     "category": "Web Development",
     "figma": "https://www.figma.com/design/brEC5PuMwlkSmVRyFzPrdL/portfolio-anandhu-Design-2?node-id=0-1&m=dev&t=MkPMtY8lHrJsU506-1",
@@ -36,7 +36,8 @@
     "tech": [
       { "icons": "HTML logo.svg", "name": "HTML" },
       { "icons": "javascript logo.svg", "name": "JavaScript" },
-      { "icons": "file_type_css2 logo.svg", "name": "CSS" }
+      { "icons": "file_type_css2 logo.svg", "name": "CSS" },
+      { "icons": "skill-icons_vercel-dark.svg", "name": "Vercel" }
     ],
     "category": "Web Development",
     "figma": "https://www.figma.com/design/D0o810Rd1ALqQ5CSvp1pCy/huluwebsite?node-id=0-1&m=dev&t=DtYZumhET1st7i83-1",
@@ -124,7 +125,7 @@
         "icons": "streamline-logos_framer-logo-block.svg",
         "name": "Framer Motion"
       },
-      { "icons": "Vercel.svg", "name": "Vercel" }
+      { "icons": "skill-icons_vercel-dark.svg", "name": "Vercel" }
     ],
     "category": "Web Development",
     "website": "https://anandhu-portfolio.vercel.app/",
