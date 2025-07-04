@@ -20,7 +20,7 @@ function Overview() {
         {/* Scrollable Service Cards */}
         <div className="mt-10 max-sm:mt-10 flex gap-6 overflow-x-auto sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 sm:gap-9 justify-items-center scrollbar-hide overflow-y-hidden max-sm:pl-[14px] sm:pl-0">
           {service.map((service, index) => (
-            <Services key={index} service={service} />
+            <Services key={index} index={index} service={service} />
           ))}
         </div>
       </div>

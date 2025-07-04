@@ -15,7 +15,7 @@ function Skills() {
       </div>
       <div className="flex flex-wrap justify-center gap-6 max-[399px]:gap-3 max-[450px]:gap-4  sm:gap-6 md:gap-7 lg:gap-9 xl:gap-3.5 sm:max-w-[1022px] w-full sm:mt-14 mt-10 mx-auto sm:px-4">
         {skills.map((skill, index) => (
-          <Skillscontainer key={index} skills={skill} />
+          <Skillscontainer key={index} index={index} skills={skill} />
         ))}
       </div>
     </section>

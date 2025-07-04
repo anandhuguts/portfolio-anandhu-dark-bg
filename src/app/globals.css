@@ -117,3 +117,48 @@ body {
   justify-content: center;
   background-color: #000; /* optional: background */
 }
+@keyframes shadowMove {
+  0% {
+    text-shadow: 1px 1px 2px #ff00ff;
+  }
+  25% {
+    text-shadow: -1px 1px 2px #00ffff;
+  }
+  50% {
+    text-shadow: -1px -1px 2px #00ff00;
+  }
+  75% {
+    text-shadow: 1px -1px 2px #ffff00;
+  }
+  100% {
+    text-shadow: 1px 1px 2px #ff00ff;
+  }
+}
+
+.glow-text {
+  color: white;
+
+  animation: shadowMove 3s infinite;
+}
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px #ff0, 0 0 10px #f00;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  color: white;
+  animation: flicker 2s infinite;
+}

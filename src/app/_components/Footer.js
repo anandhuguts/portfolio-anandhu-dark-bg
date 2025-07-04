@@ -1,7 +1,9 @@
+"use client";
 import Aurora from "../_sub components/Aurorabg";
 import ContactButton from "../_sub components/Button";
 import BurgerMenu from "../_sub components/Button";
 import Socialmedia from "../_sub components/Socialmedia";
+import { motion } from "framer-motion";
 
 function Footer() {
   return (
@@ -11,11 +13,16 @@ function Footer() {
       </div>
 
       <div className="flex flex-col mx-auto relative w-full max-w-[715px] z-10 justify-center px-3.5 ">
-        <h2 className="font-medium sm:text-[35px] max-[428px]:text-[22px] text-[28px] md:text-[39px] lg:text-[40px] text-primary   text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 120, damping: 12 }}
+          className="glow-text font-medium sm:text-[35px] max-[428px]:text-[22px] text-[28px] md:text-[39px] lg:text-[40px] text-primary   text-center"
+        >
           Let&apos;s build something together
           <br />
           I&apos;m open to full-time or freelance work
-        </h2>
+        </motion.h2>
         <p className="text-[18px] max-md:text-[17px] font-normal text-secondary text-center mt-1 ">
           Focused on full-stack web development,
           <br className="md:hidden block" /> with an eye for clean, intuitive

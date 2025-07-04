@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function Services({ service }) {
+function Services({ service, index }) {
   return (
     <div className="group max-sm:min-w-[340px] sm:w-full lg:max-w-[388px] h-[318px] border border-[#454545] bg-[#171717] rounded-[20px]">
       <div className="flex items-center gap-4.5 justify-center w-fullmax-w-[388px] h-[143px] rounded-t-[20px] bg-[#121212] border-b border-[#454545]">
