@@ -109,58 +109,33 @@ export const HamburgerButton = () => {
       <Hamburger toggled={isOpen} toggle={setOpen} color="#FAFAFA" size={25} />
 
       <div
-        className={`overflow-y-hidden px-7 font-outfit  absolute top-14 left-0 w-full bg-[#0A0A0A] text-white z-5 transform transition-transform duration-500 ease-in-out $ ${
+        className={`min-h-[calc(100vh-3.5rem)] flex flex-col justify-between px-7 font-outfit pt-20 pb-15  absolute top-14 left-0 w-full bg-[#0A0A0A] text-white z-5 transform transition-transform duration-500 ease-in-out $ ${
           isOpen ? "block" : "hidden md:flex"
         }`}
       >
-        <div className="w-full h-screen relative mt-20">
-          {/* <div className="pl-[28px] flex items-center gap-6">
-            <div className="relative w-[53px] h-[44px]">
-              <Image
-                src="/ANandhu logo.svg" // Make sure it's in the `public` folder
-                alt="Logo"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div>
-              <h2 className="font-semibold text-[28px]">Anandhu Prasad</h2>
-              <p className="font-normal text-[16px] mt-.5">
-                Full stack Developer
-              </p>
-            </div>
-          </div> */}
-
-          {/* <span
-            className="block w-full bg-[#313131] h-[1px] mt-.5n
-          "
-          ></span> */}
-          <ul className="mt-4">
-            {navItems.map((item) => (
-              <li key={item.name} className="mt-[20px]">
-                <Link
-                  href={item.href}
-                  className={`flex items-center gap-4.5  ${
-                    pathname === item.href
-                      ? "text-[#FAFAFA]"
-                      : "text-[#B0B0B0] "
-                  }`}
-                  onClick={() => setOpen(false)}
-                >
-                  {item.svg}
-                  <div>
-                    <span className={`font-semibold text-[18px]  `}>
-                      {item.name}
-                    </span>
-                    <p className="font-regular text-[13px]">{item.details}</p>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2 ">
-            <Socialmedia width={"30"} />
-          </div>
+        <ul>
+          {navItems.map((item) => (
+            <li key={item.name} className="mt-[20px]">
+              <Link
+                href={item.href}
+                className={`flex items-center gap-4.5  ${
+                  pathname === item.href ? "text-[#FAFAFA]" : "text-[#B0B0B0] "
+                }`}
+                onClick={() => setOpen(false)}
+              >
+                {item.svg}
+                <div>
+                  <span className={`font-semibold text-[18px]  `}>
+                    {item.name}
+                  </span>
+                  <p className="font-regular text-[13px]">{item.details}</p>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="flex justify-center ">
+          <Socialmedia width={"30"} />
         </div>
       </div>
     </>
