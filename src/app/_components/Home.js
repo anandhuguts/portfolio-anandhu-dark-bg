@@ -6,7 +6,7 @@ import Typewriter from "../_animations/Typewriter";
 import ZoomVideoSection from "../_sub components/VideoScroll";
 import { useRef } from "react";
 import { motion } from "framer-motion";
-import ContactButton from "../_sub components/Button";
+import ContactButton from "../_sub components/ContactButton";
 
 function Home() {
   return (

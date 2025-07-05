@@ -1,7 +1,7 @@
 "use client";
 import Aurora from "../_sub components/Aurorabg";
-import ContactButton from "../_sub components/Button";
-import BurgerMenu from "../_sub components/Button";
+import ContactButton from "../_sub components/ContactButton";
+import BurgerMenu from "../_sub components/ContactButton";
 import Socialmedia from "../_sub components/Socialmedia";
 import { motion } from "framer-motion";
 

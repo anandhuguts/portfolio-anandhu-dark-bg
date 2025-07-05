@@ -51,10 +51,10 @@ export default function ContactButton() {
               fill="white"
             />
           </svg>
-          <h5 className="text-[26px] font-semibold  text-primary mt-2.5 text-center">
+          <h5 className="sm:text-[26px] text-[20px] font-semibold  text-primary mt-2.5 text-center">
             Available for work
           </h5>
-          <p className="text-[17px] font-normal text-secondary text-center mt-1">
+          <p className="sm:text-[17px] text-[15px] font-normal text-secondary text-center mt-1">
             I&apos;m currently open to new opportunities across roles, projects,
             or collaborations. If you're hiring or have something in mind, feel
             free to reach out.
@@ -66,18 +66,19 @@ export default function ContactButton() {
               viewBox="0 0 29 29"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="max-sm:w-[25px] max-sm:h-[25px] "
             >
               <path
                 d="M24.1667 21.75H21.75V11.1771L14.5 15.7083L7.24999 11.1771V21.75H4.83332V7.24999H6.28332L14.5 12.3854L22.7167 7.24999H24.1667M24.1667 4.83333H4.83332C3.49207 4.83333 2.41666 5.90874 2.41666 7.24999V21.75C2.41666 22.3909 2.67127 23.0056 3.12448 23.4588C3.57769 23.912 4.19238 24.1667 4.83332 24.1667H24.1667C24.8076 24.1667 25.4223 23.912 25.8755 23.4588C26.3287 23.0056 26.5833 22.3909 26.5833 21.75V7.24999C26.5833 6.60905 26.3287 5.99437 25.8755 5.54115C25.4223 5.08794 24.8076 4.83333 24.1667 4.83333Z"
                 fill="black"
               />
             </svg>
-            <span className="font-medium text-[20px] text-black ">
+            <span className="font-medium sm:text-[20px] text-[16px] text-black ">
               Send me an email
             </span>
           </button>
           <div className="mt-8">
-            <Socialmedia width={"24"} />
+            <Socialmedia width={"22"} />
           </div>
         </div>
       </div>

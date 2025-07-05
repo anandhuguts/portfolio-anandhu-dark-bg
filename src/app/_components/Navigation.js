@@ -33,7 +33,7 @@ function Navigation() {
         </svg>
       </Link>
 
-      <ul className=" md:flex hidden  gap-9  px-10 py-2.5 bg-black/40 backdrop-blur-sm text-[#a1a1a1]  rounded-full font-outfit font-regular border border-[#a1a1a1]">
+      <ul className=" md:flex hidden  gap-9  px-10 py-2.5 bg-black/70 backdrop-blur-sm text-[#a1a1a1]  rounded-full font-outfit font-regular border border-[#a1a1a1]">
         {navItems.map((item) => (
           <li key={item.name} className="relative ">
             <Link
