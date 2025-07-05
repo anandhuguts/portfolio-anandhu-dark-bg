@@ -109,32 +109,30 @@ export const HamburgerButton = () => {
       <Hamburger toggled={isOpen} toggle={setOpen} color="#FAFAFA" size={25} />
 
       <div
-        className={`min-h-[calc(100vh-3.5rem)] flex flex-col justify-between px-7 font-outfit pt-20 pb-15  absolute top-14 left-0 w-full bg-[#0A0A0A] text-white z-5 transform transition-transform duration-500 ease-in-out $ ${
+        className={`h-[calc(100vh-3.5rem)] overflow-y-auto flex flex-col justify-between px-7 font-outfit absolute top-14 left-0 w-full bg-[#0A0A0A] text-white z-50 transition-transform duration-500 ease-in-out ${
           isOpen ? "block" : "hidden md:flex"
         }`}
       >
-        <ul>
+        <ul className="pt-8">
           {navItems.map((item) => (
             <li key={item.name} className="mt-[20px]">
               <Link
                 href={item.href}
-                className={`flex items-center gap-4.5  ${
-                  pathname === item.href ? "text-[#FAFAFA]" : "text-[#B0B0B0] "
+                className={`flex items-center gap-4.5 ${
+                  pathname === item.href ? "text-[#FAFAFA]" : "text-[#B0B0B0]"
                 }`}
                 onClick={() => setOpen(false)}
               >
                 {item.svg}
                 <div>
-                  <span className={`font-semibold text-[18px]  `}>
-                    {item.name}
-                  </span>
+                  <span className="font-semibold text-[18px]">{item.name}</span>
                   <p className="font-regular text-[13px]">{item.details}</p>
                 </div>
               </Link>
             </li>
           ))}
         </ul>
-        <div className="flex justify-center ">
+        <div className="py-8 flex justify-center">
           <Socialmedia width={"30"} />
         </div>
       </div>
