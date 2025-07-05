@@ -52,7 +52,7 @@ export const HamburgerButton = () => {
     },
     {
       name: "Projects",
-      href: "/project",
+      href: "/projects",
       details: "Explore real-world web apps I've built.",
       svg: (
         <svg

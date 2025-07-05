@@ -7,8 +7,8 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { HamburgerButton } from "../_sub components/Hamburgerbutton";
 const navItems = [
   { name: "Home", href: "/" },
+  { name: "Projects", href: "/projects" },
   { name: "About", href: "/about" },
-  { name: "Projects", href: "/project" },
   { name: "Feedback", href: "/feedback" },
 ];
 

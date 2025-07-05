@@ -94,7 +94,7 @@ export default function ScrollProjects({ projects }) {
                 key={project.id}
                 ref={(el) => (sectionRefs.current[idx] = el)}
                 data-index={idx}
-                className="w-full xl:w-[700px] md:w-[500px] lg:w-[600px] h-[461px] rounded-[41px] p-[2px] bg-[linear-gradient(135deg,rgba(255,255,255,0.9)_0%,rgba(150,150,150,0.3)_100%)] shadow-xl"
+                className={`w-full xl:w-[700px] md:w-[500px] lg:w-[600px] h-[461px] rounded-[41px] p-[2px] bg-[linear-gradient(135deg,rgba(255,255,255,0.9)_0%,rgba(150,150,150,0.3)_100%)]  shadow-xl`}
               >
                 <div
                   className="w-full h-full  border-15 border-[#121212] bg-cover rounded-[41px]  bg-center bg-no-repeat  flex flex-col  "
