@@ -109,7 +109,7 @@ export const HamburgerButton = () => {
       <Hamburger toggled={isOpen} toggle={setOpen} color="#FAFAFA" size={25} />
 
       <div
-        className={`h-screen overflow-y-auto flex flex-col justify-between px-7 font-outfit absolute  left-0 w-full bg-[#0A0A0A] text-white z-50 transition-transform duration-500 ease-in-out pb-20 ${
+        className={`h-screen overflow-y-auto flex flex-col justify-between px-7 font-outfit absolute  left-0 w-full bg-[#0A0A0A] text-white z-50 transition-transform duration-500 ease-in-out pb-30 ${
           isOpen ? "block" : "hidden md:flex"
         }`}
       >

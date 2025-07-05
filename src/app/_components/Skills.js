@@ -8,7 +8,7 @@ function Skills() {
         <h2 className="text-center font-semibold sm:text-[48px] text-[42px]">
           My Skills
         </h2>
-        <p className="text-secondary text-[18px] font-normal mt-2 text-center">
+        <p className="text-secondary text-[18px] max-[428px]:text-[16.5px]  font-normal mt-2 text-center">
           Showcasing my expertise in React, Next.js, UI/UX design, and
           full-stack development through practical builds.
         </p>

@@ -8,7 +8,7 @@ function Overview() {
         <h2 className="sm:text-[48px] text-[42px] sm:px-0 px-[14px]">
           Overview
         </h2>
-        <p className="text-secondary text-[18px] font-normal sm:mt-4.5 mt-2 sm:px-0 px-[14px]">
+        <p className="text-secondary text-[18px] max-[428px]:text-[16.5px] font-normal sm:mt-4.5 mt-2 sm:px-0 px-[14px]">
           As a MERN stack developer and creative web designer, I craft fast,
           scalable, and visually compelling digital experiences. With a strong
           focus on usability and performance, I merge clean architecture with

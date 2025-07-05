@@ -17,7 +17,7 @@ function Projects() {
         <h2 className="text-center font-semibold text-[42px] sm:text-[48px]">
           Projects
         </h2>
-        <p className="text-secondary text-[18px] font-normal mt-2 text-center">
+        <p className="text-secondary text-[18px] max-[428px]:text-[16.5px]  font-normal mt-2 text-center">
           A collection of real-world applications and designs I&apos;ve crafted
           using modern web technologies and tools.
         </p>

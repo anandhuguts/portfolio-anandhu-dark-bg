@@ -15,7 +15,7 @@ function Home() {
         🎯 MERN Stack Specialist
       </div>
 
-      <h1 className="  text-center lg:text-5xl max-[664px]:text-[30px] max-[428px]:whitespace-nowrap max-[428px]:text-[27px]  text-[42px] font-outfit font-medium mt-3.5 max-[664px]:leading-[36px] leading-[60px]">
+      <h1 className="  text-center lg:text-5xl max-[664px]:text-[30px] max-[428px]:whitespace-nowrap max-[428px]:text-[27px] max-[350px]:text-[22px] text-[42px] font-outfit font-medium mt-3.5 max-[664px]:leading-[36px] leading-[60px]">
         I design and build intuitive&nbsp;
         <br />
         MERN stack web apps — from&nbsp;
@@ -23,7 +23,7 @@ function Home() {
         wireframes to deployment.
       </h1>
       <h2
-        className="font-regular text-[22px] max-[664px]:text-[20px] mt-5  font-primary text-[#B9B1B1] max-sm:text-center  "
+        className="font-regular text-[22px]  max-[664px]:text-[20px] mt-5  font-primary text-[#B9B1B1] max-sm:text-center  "
         // style={{
         //   backgroundImage:
         //     "linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 30%)",
@@ -33,13 +33,12 @@ function Home() {
         Hi, I&apos;m Anandhu Prasad — a&nbsp;
         <br className="sm:hidden block" /> <Typewriter />
       </h2>
-      <div className="mt-5 font-medium flex gap-7 max-[428px]:flex-col max-[428px]:gap-4">
+      <div className="mt-5  font-medium flex gap-7 max-[428px]:flex-col max-[428px]:items-center  max-[428px]:gap-4">
         <ContactButton />
         <a
           href="https://drive.google.com/file/d/160-4h6GyyokJ4g8c76S6rASr8bRD90U2/view?usp=sharing"
           target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block"
+          rel="noopener noreferrer "
         >
           <button className="cursor-pointer flex justify-center items-center px-5 text-primary py-2 rounded-full gap-2.5 bg-[#161616]/40 border  border-[#313131] overflow-hidden ">
             Resume

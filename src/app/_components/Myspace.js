@@ -10,7 +10,7 @@ function Myspace() {
         <h2 className="text-center font-semibold sm:text-[48px] text-[42px] ">
           A Glimpse Into My Space
         </h2>
-        <p className="text-secondary text-[18px] font-normal mt-2 text-center">
+        <p className="text-secondary text-[18px] max-[428px]:text-[16.5px]  font-normal mt-2 text-center">
           Where code meets personality — tools I use, messages from visitors,
           and sounds that keep me in flow.
         </p>
