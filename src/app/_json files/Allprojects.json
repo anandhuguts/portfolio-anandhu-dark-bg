@@ -9,7 +9,7 @@
       "Designed with a desktop-first approach and fully responsive across all devices.",
       "Integrated reusable components and modular design for scalability."
     ],
-    "image": "/nextjsprotfoliopreview.png",
+    "image": "/portfoliodark.png",
     "tech": [
       { "icons": "skill-icons_nextjs-light.svg", "name": "NextJS" },
       { "icons": "tailwind.svg", "name": "Tailwind" },
@@ -32,7 +32,7 @@
       "Handling click events in vanilla JavaScript",
       " Manual DOM manipulation without libraries"
     ],
-    "image": "/Screenshot 2025-07-03 195745.png",
+    "image": "/huluweb.png",
     "tech": [
       { "icons": "HTML logo.svg", "name": "HTML" },
       { "icons": "javascript logo.svg", "name": "JavaScript" },
@@ -46,70 +46,55 @@
   },
   {
     "id": 3,
-    "title": "Portfolio Redesign",
-    "description": "A modern redesign of a personal portfolio focused on accessibility, readability, and smooth animations. Prototyped in Figma and handed off with design systems.",
+    "title": " Outfitted E-commerce App",
+    "description": "Outfitted is a modern, mobile-first clothing e-commerce app concept designed to deliver a seamless shopping experience for fashion-forward users. This project was fully designed in Figma, applying end-to-end UI/UX design processes—from user research to prototyping.",
     "points": [
-      "Clean component-based layout",
-      "Accessibility-focused colors",
-      "Prototype interactions and transitions"
+      "Applied user-centered design based on shopping behavior.",
+      "Designed from wireframes to high-fidelity mockups.",
+      "Built key flows: onboarding, browse, cart, checkout, tracking.",
+      "Created a full interactive prototype in Figma."
     ],
-    "image": "/uiux1.png",
-    "tech": [
-      { "icons": "figma.svg", "name": "Figma" },
-      { "icons": "xd.svg", "name": "Adobe XD" }
-    ],
-    "category": "UI/UX Design"
+    "image": "/outfitted mockup.png",
+    "tech": [{ "icons": "figma logo.svg", "name": "Figma" }],
+    "category": "UI/UX Design",
+    "figma": "https://www.figma.com/design/EfyevtPr2RSIkLyOY9yhMp/e-commerce-app-ui?node-id=623-503&m=dev&t=bnB6FjeXSD78UCho-1"
   },
   {
     "id": 4,
-    "title": "Mobile App UI Kit",
-    "description": "A complete UI kit for a habit tracking mobile app, featuring atomic design elements, dark/light modes, and reusable components.",
+    "title": "Trivago Cabin Retreat",
+    "description": "A relaxing, nature-themed cabin booking UI inspired by digital detox experiences. Designed to promote calmness and simplicity with clean layout and immersive imagery.",
     "points": [
-      "Dark & light theme",
-      "Atomic design principles",
-      "Fully responsive prototypes"
+      "Nature-inspired booking interface",
+      "Focus on digital detox messaging",
+      "Minimalist layout with earthy tones"
     ],
-    "image": "/uiux2.png",
-    "tech": [
-      { "icons": "figma.svg", "name": "Figma" },
-      { "icons": "xd.svg", "name": "Adobe XD" }
-    ],
-    "category": "UI/UX Design"
+    "image": "/cabin.png",
+    "tech": [{ "icons": "figma logo.svg", "name": "Figma" }],
+    "category": "UI/UX Design",
+    "figma": "https://www.figma.com/design/XvOsWLlnS2OLXNEeoLfThE/cabin-website?node-id=0-1&m=dev&t=eMjEBorme9yFIhdZ-1"
   },
   {
     "id": 5,
-    "title": "Music Festival Poster",
-    "description": "A vibrant and dynamic poster series for an electronic music festival, using bold typography and abstract gradients to capture the mood.",
+    "title": "Behance Design Collection",
+    "description": "A curated visual design showcase featuring my best poster designs, creative packaging work, animated motion graphics, and unique logo designs—all published on Behance.",
     "points": [
-      "Poster & social banners",
-      "Print & digital formats",
-      "Gradient and glow effects"
+      "Poster design for events and promotions",
+      "Creative package design",
+      "Motion graphics and animated sequences",
+      " logo design and identity systems"
     ],
-    "image": "/graphic1.png",
+    "image": "/graphicdesignPortfolio.png",
     "tech": [
-      { "icons": "photoshop.svg", "name": "Photoshop" },
-      { "icons": "illustrator.svg", "name": "Illustrator" }
+      { "icons": "photoshop-original logo.svg", "name": "Photoshop" },
+      { "icons": "illustrator logo.svg", "name": "Illustrator" },
+      { "icons": "after-effects-1 logo.svg", "name": "After Effects" }
     ],
-    "category": "Graphic Design"
+    "category": "Graphic Design",
+    "website": "https://www.behance.net/gallery/193019455/Graphic-design-portfolio-2024"
   },
+
   {
     "id": 6,
-    "title": "Brand Identity for Café",
-    "description": "Logo design, menu layout, and packaging concept for a minimalist-themed coffee shop. Focus on earthy tones and hand-drawn illustrations.",
-    "points": [
-      "Custom logo design",
-      "Menu & packaging mockups",
-      "Organic visual style"
-    ],
-    "image": "/graphic2.png",
-    "tech": [
-      { "icons": "illustrator.svg", "name": "Illustrator" },
-      { "icons": "indesign.svg", "name": "InDesign" }
-    ],
-    "category": "Graphic Design"
-  },
-  {
-    "id": 7,
     "title": "React Portfolio (Single Page App)",
     "description": "A minimalist single-page portfolio website created using React.js, focused on smooth UI/UX and component-driven design.",
     "points": [
@@ -117,7 +102,7 @@
       "Smooth scrolling using react-scroll",
       "Designed from scratch in Figma"
     ],
-    "image": "/Screenshot 2025-06-26 144033.png",
+    "image": "/blueportfolio.png",
     "tech": [
       { "icons": "reacticon.svg", "name": "React" },
       { "icons": "tailwind.svg", "name": "Tailwind" },

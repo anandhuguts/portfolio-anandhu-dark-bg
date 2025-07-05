@@ -41,7 +41,7 @@ function Home() {
           rel="noopener noreferrer"
           className="inline-block"
         >
-          <button className=" flex justify-center items-center px-5 text-primary py-2 rounded-full gap-2.5 bg-[#161616]/40 border  border-[#313131] overflow-hidden ">
+          <button className="cursor-pointer flex justify-center items-center px-5 text-primary py-2 rounded-full gap-2.5 bg-[#161616]/40 border  border-[#313131] overflow-hidden ">
             Resume
             <svg
               width="17"

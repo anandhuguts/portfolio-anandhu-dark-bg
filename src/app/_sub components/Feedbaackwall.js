@@ -69,7 +69,7 @@ function Feedbaackwall() {
           </svg>
         </div>
       </div>
-      <div className="absolute bottom-0 right-0  ">
+      <div className="absolute bottom-0 right-0   ">
         <LittleBoy />
       </div>
     </div>

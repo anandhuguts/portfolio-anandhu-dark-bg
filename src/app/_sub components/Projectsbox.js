@@ -6,6 +6,7 @@ import Image from "next/image";
 export default function ScrollProjects({ projects }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionRefs = useRef([]);
+  const isUIUX = projects[activeIndex].category === "UI/UX Design";
 
   // useEffect(() => {
   //   const observer = new IntersectionObserver(
@@ -178,68 +179,106 @@ export default function ScrollProjects({ projects }) {
                     href={
                       projects[activeIndex].website
                         ? projects[activeIndex].website
-                        : ""
+                        : "#"
                     }
+                    onClick={isUIUX ? (e) => e.preventDefault() : undefined}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block"
                   >
-                    <button className="bg-primary  text-[16px]  flex items-center px-5 text-black py-2 rounded-full gap-2.5">
-                      Visit Project
-                      <svg
-                        className="text-white"
-                        width="17"
-                        height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M9.39872 2.59873C9.61125 2.38626 9.89946 2.26691 10.2 2.26691C10.5005 2.26691 10.7887 2.38626 11.0012 2.59873L16.1012 7.69873C16.3137 7.91126 16.4331 8.19948 16.4331 8.5C16.4331 8.80052 16.3137 9.08873 16.1012 9.30127L11.0012 14.4013C10.7875 14.6077 10.5012 14.7219 10.2041 14.7194C9.90691 14.7168 9.62265 14.5976 9.41252 14.3875C9.20239 14.1773 9.0832 13.8931 9.08062 13.5959C9.07804 13.2988 9.19227 13.0125 9.39872 12.7987L12.4666 9.63333H1.69998C1.3994 9.63333 1.11114 9.51393 0.898596 9.30139C0.686055 9.08884 0.56665 8.80058 0.56665 8.5C0.56665 8.19942 0.686055 7.91115 0.898596 7.69861C1.11114 7.48607 1.3994 7.36667 1.69998 7.36667H12.4666L9.39872 4.20126C9.18625 3.98873 9.06689 3.70052 9.06689 3.4C9.06689 3.09948 9.18625 2.81126 9.39872 2.59873Z"
-                          fill="black"
-                        />
-                      </svg>
+                    <button
+                      className={` ${
+                        isUIUX ? "bg-secondary" : "bg-primary cursor-pointer"
+                      }  text-[16px]  flex items-center px-5 text-black py-2 rounded-full gap-2.5 `}
+                    >
+                      {projects[activeIndex].category === "Web Development"
+                        ? "Visit Project"
+                        : projects[activeIndex].category === "UI/UX Design"
+                        ? "Case Study"
+                        : "Behance Portfolio"}
+                      {isUIUX ? (
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            opacity="0.1"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M8.5 3.1875C7.09104 3.1875 5.73978 3.74721 4.7435 4.7435C3.74721 5.73978 3.1875 7.09104 3.1875 8.5C3.1875 9.90896 3.74721 11.2602 4.7435 12.2565C5.73978 13.2528 7.09104 13.8125 8.5 13.8125C9.90896 13.8125 11.2602 13.2528 12.2565 12.2565C13.2528 11.2602 13.8125 9.90896 13.8125 8.5C13.8125 7.09104 13.2528 5.73978 12.2565 4.7435C11.2602 3.74721 9.90896 3.1875 8.5 3.1875ZM1.0625 8.5C1.0625 4.39238 4.39238 1.0625 8.5 1.0625C12.6076 1.0625 15.9375 4.39238 15.9375 8.5C15.9375 12.6076 12.6076 15.9375 8.5 15.9375C4.39238 15.9375 1.0625 12.6076 1.0625 8.5Z"
+                            fill="black"
+                          />
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M8.50006 3.18751C7.13041 3.18458 5.81314 3.71357 4.82593 4.66297C4.62142 4.85206 4.35083 4.95328 4.07242 4.94484C3.79401 4.93641 3.53005 4.81898 3.33737 4.61784C3.14468 4.41671 3.03869 4.14795 3.0422 3.86944C3.04571 3.59093 3.15845 3.32493 3.35614 3.12872C4.73883 1.80033 6.58266 1.05971 8.50006 1.06251C8.78185 1.06251 9.0521 1.17445 9.25136 1.37371C9.45061 1.57296 9.56256 1.84322 9.56256 2.12501C9.56256 2.4068 9.45061 2.67705 9.25136 2.87631C9.0521 3.07557 8.78185 3.18751 8.50006 3.18751Z"
+                            fill="black"
+                          />
+                        </svg>
+                      ) : (
+                        <svg
+                          className="text-white"
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.39872 2.59873C9.61125 2.38626 9.89946 2.26691 10.2 2.26691C10.5005 2.26691 10.7887 2.38626 11.0012 2.59873L16.1012 7.69873C16.3137 7.91126 16.4331 8.19948 16.4331 8.5C16.4331 8.80052 16.3137 9.08873 16.1012 9.30127L11.0012 14.4013C10.7875 14.6077 10.5012 14.7219 10.2041 14.7194C9.90691 14.7168 9.62265 14.5976 9.41252 14.3875C9.20239 14.1773 9.0832 13.8931 9.08062 13.5959C9.07804 13.2988 9.19227 13.0125 9.39872 12.7987L12.4666 9.63333H1.69998C1.3994 9.63333 1.11114 9.51393 0.898596 9.30139C0.686055 9.08884 0.56665 8.80058 0.56665 8.5C0.56665 8.19942 0.686055 7.91115 0.898596 7.69861C1.11114 7.48607 1.3994 7.36667 1.69998 7.36667H12.4666L9.39872 4.20126C9.18625 3.98873 9.06689 3.70052 9.06689 3.4C9.06689 3.09948 9.18625 2.81126 9.39872 2.59873Z"
+                            fill="black"
+                          />
+                        </svg>
+                      )}
                     </button>
                   </a>
                   <div className="flex items-center gap-3">
-                    <a
-                      href={
-                        projects[activeIndex].figma
-                          ? projects[activeIndex].figma
-                          : ""
-                      }
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block"
-                    >
-                      <div className="relative w-[30px] h-[30px]">
-                        <Image
-                          src="/figma logo.svg" // Make sure it's in the `public` folder
-                          alt="Logo"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                    </a>
-                    <a
-                      href={
-                        projects[activeIndex].github
-                          ? projects[activeIndex].github
-                          : ""
-                      }
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block"
-                    >
-                      <div className="relative w-[30px] h-[30px]">
-                        <Image
-                          src="/github logo.svg" // Make sure it's in the `public` folder
-                          alt="Logo"
-                          fill
-                          className="object-contain"
-                        />
-                      </div>
-                    </a>
+                    {(projects[activeIndex].category === "UI/UX Design" ||
+                      projects[activeIndex].category === "Web Development") && (
+                      <a
+                        href={
+                          projects[activeIndex].figma
+                            ? projects[activeIndex].figma
+                            : ""
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                      >
+                        <div className="relative w-[30px] h-[30px]">
+                          <Image
+                            src="/figma logo.svg" // Make sure it's in the `public` folder
+                            alt="Logo"
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      </a>
+                    )}
+                    {projects[activeIndex].category === "Web Development" && (
+                      <a
+                        href={
+                          projects[activeIndex].github
+                            ? projects[activeIndex].github
+                            : ""
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block"
+                      >
+                        <div className="relative w-[30px] h-[30px]">
+                          <Image
+                            src="/github logo.svg" // Make sure it's in the `public` folder
+                            alt="Logo"
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      </a>
+                    )}
                   </div>
                 </div>
               </motion.div>
@@ -306,58 +345,103 @@ export default function ScrollProjects({ projects }) {
               </div>
               <div className="flex w-full items-center  gap-5 justify-between mt-6  ">
                 <div className="flex items-center gap-3">
-                  <a
-                    href={project.figma ? project.figma : ""}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                  >
-                    <div className="relative w-[24px] h-[24px]">
-                      <Image
-                        src="/figma logo.svg" // Make sure it's in the `public` folder
-                        alt="Logo"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                  </a>
-                  <a
-                    href={project.github ? project.github : ""}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                  >
-                    <div className="relative w-[24px] h-[24px]">
-                      <Image
-                        src="/github logo.svg" // Make sure it's in the `public` folder
-                        alt="Logo"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                  </a>
+                  {(project.category === "UI/UX Design" ||
+                    project.category === "Web Development") && (
+                    <a
+                      href={project.figma ? project.figma : ""}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                    >
+                      <div className="relative w-[24px] h-[24px]">
+                        <Image
+                          src="/figma logo.svg" // Make sure it's in the `public` folder
+                          alt="Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    </a>
+                  )}
+
+                  {project.category === "Web Development" && (
+                    <a
+                      href={project.github ? project.github : ""}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                    >
+                      <div className="relative w-[24px] h-[24px]">
+                        <Image
+                          src="/github logo.svg" // Make sure it's in the `public` folder
+                          alt="Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    </a>
+                  )}
                 </div>
                 <a
                   href={project.website ? project.website : ""}
+                  onClick={
+                    project.category === "UI/UX Design"
+                      ? (e) => e.preventDefault()
+                      : undefined
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block"
                 >
-                  <button className="bg-primary font-medium max-[865px]:text-[18px] max-[428px]:!text-[14px] text-[16px] max-[428px]:!p-2.5  flex items-center px-5 text-black py-2 rounded-full gap-2.5">
-                    Visit Project
-                    <svg
-                      className="text-white"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 17 17"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M9.39872 2.59873C9.61125 2.38626 9.89946 2.26691 10.2 2.26691C10.5005 2.26691 10.7887 2.38626 11.0012 2.59873L16.1012 7.69873C16.3137 7.91126 16.4331 8.19948 16.4331 8.5C16.4331 8.80052 16.3137 9.08873 16.1012 9.30127L11.0012 14.4013C10.7875 14.6077 10.5012 14.7219 10.2041 14.7194C9.90691 14.7168 9.62265 14.5976 9.41252 14.3875C9.20239 14.1773 9.0832 13.8931 9.08062 13.5959C9.07804 13.2988 9.19227 13.0125 9.39872 12.7987L12.4666 9.63333H1.69998C1.3994 9.63333 1.11114 9.51393 0.898596 9.30139C0.686055 9.08884 0.56665 8.80058 0.56665 8.5C0.56665 8.19942 0.686055 7.91115 0.898596 7.69861C1.11114 7.48607 1.3994 7.36667 1.69998 7.36667H12.4666L9.39872 4.20126C9.18625 3.98873 9.06689 3.70052 9.06689 3.4C9.06689 3.09948 9.18625 2.81126 9.39872 2.59873Z"
-                        fill="black"
-                      />
-                    </svg>
+                  <button
+                    className={`${
+                      project.category === "UI/UX Design"
+                        ? "bg-secondary"
+                        : "bg-primary cursor-pointer"
+                    } font-medium max-[865px]:text-[18px] max-[428px]:!text-[14px] text-[16px] max-[428px]:!p-2.5  flex items-center px-5 text-black py-2 rounded-full gap-2.5`}
+                  >
+                    {project.category === "Web Development"
+                      ? "Visit Project"
+                      : project.category === "UI/UX Design"
+                      ? "Case Study"
+                      : "Behance Portfolio"}
+                    {project.category === "UI/UX Design" ? (
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.1"
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M8.5 3.1875C7.09104 3.1875 5.73978 3.74721 4.7435 4.7435C3.74721 5.73978 3.1875 7.09104 3.1875 8.5C3.1875 9.90896 3.74721 11.2602 4.7435 12.2565C5.73978 13.2528 7.09104 13.8125 8.5 13.8125C9.90896 13.8125 11.2602 13.2528 12.2565 12.2565C13.2528 11.2602 13.8125 9.90896 13.8125 8.5C13.8125 7.09104 13.2528 5.73978 12.2565 4.7435C11.2602 3.74721 9.90896 3.1875 8.5 3.1875ZM1.0625 8.5C1.0625 4.39238 4.39238 1.0625 8.5 1.0625C12.6076 1.0625 15.9375 4.39238 15.9375 8.5C15.9375 12.6076 12.6076 15.9375 8.5 15.9375C4.39238 15.9375 1.0625 12.6076 1.0625 8.5Z"
+                          fill="black"
+                        />
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M8.50006 3.18751C7.13041 3.18458 5.81314 3.71357 4.82593 4.66297C4.62142 4.85206 4.35083 4.95328 4.07242 4.94484C3.79401 4.93641 3.53005 4.81898 3.33737 4.61784C3.14468 4.41671 3.03869 4.14795 3.0422 3.86944C3.04571 3.59093 3.15845 3.32493 3.35614 3.12872C4.73883 1.80033 6.58266 1.05971 8.50006 1.06251C8.78185 1.06251 9.0521 1.17445 9.25136 1.37371C9.45061 1.57296 9.56256 1.84322 9.56256 2.12501C9.56256 2.4068 9.45061 2.67705 9.25136 2.87631C9.0521 3.07557 8.78185 3.18751 8.50006 3.18751Z"
+                          fill="black"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        className="text-white"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9.39872 2.59873C9.61125 2.38626 9.89946 2.26691 10.2 2.26691C10.5005 2.26691 10.7887 2.38626 11.0012 2.59873L16.1012 7.69873C16.3137 7.91126 16.4331 8.19948 16.4331 8.5C16.4331 8.80052 16.3137 9.08873 16.1012 9.30127L11.0012 14.4013C10.7875 14.6077 10.5012 14.7219 10.2041 14.7194C9.90691 14.7168 9.62265 14.5976 9.41252 14.3875C9.20239 14.1773 9.0832 13.8931 9.08062 13.5959C9.07804 13.2988 9.19227 13.0125 9.39872 12.7987L12.4666 9.63333H1.69998C1.3994 9.63333 1.11114 9.51393 0.898596 9.30139C0.686055 9.08884 0.56665 8.80058 0.56665 8.5C0.56665 8.19942 0.686055 7.91115 0.898596 7.69861C1.11114 7.48607 1.3994 7.36667 1.69998 7.36667H12.4666L9.39872 4.20126C9.18625 3.98873 9.06689 3.70052 9.06689 3.4C9.06689 3.09948 9.18625 2.81126 9.39872 2.59873Z"
+                          fill="black"
+                        />
+                      </svg>
+                    )}
                   </button>
                 </a>
               </div>
