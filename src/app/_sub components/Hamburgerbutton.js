@@ -109,11 +109,11 @@ export const HamburgerButton = () => {
       <Hamburger toggled={isOpen} toggle={setOpen} color="#FAFAFA" size={25} />
 
       <div
-        className={`px-7 font-outfit overflow-y-hidden fixed top-0 left-0 h-screen w-full bg-[#0A0A0A] text-white z-5 transform transition-transform duration-500 ease-in-out ${
-          isOpen ? "translate-y-[0px]" : "-translate-y-full"
+        className={`overflow-y-hidden px-7 font-outfit  absolute top-14 left-0 w-full bg-[#0A0A0A] text-white z-5 transform transition-transform duration-500 ease-in-out $ ${
+          isOpen ? "block" : "hidden md:flex"
         }`}
       >
-        <div className="w-full h-screen relative overflow-y-hidden">
+        <div className="w-full h-screen relative mt-20">
           {/* <div className="pl-[28px] flex items-center gap-6">
             <div className="relative w-[53px] h-[44px]">
               <Image
@@ -130,14 +130,7 @@ export const HamburgerButton = () => {
               </p>
             </div>
           </div> */}
-          <div className="w-full flex justify-end pt-9">
-            <Hamburger
-              toggled={isOpen}
-              toggle={setOpen}
-              color="#FAFAFA"
-              size={25}
-            />
-          </div>
+
           {/* <span
             className="block w-full bg-[#313131] h-[1px] mt-.5n
           "
@@ -165,7 +158,7 @@ export const HamburgerButton = () => {
               </li>
             ))}
           </ul>
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+          <div className="absolute bottom-40 left-1/2 transform -translate-x-1/2 ">
             <Socialmedia width={"30"} />
           </div>
         </div>
