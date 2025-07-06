@@ -12,6 +12,7 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@rive-app/react-canvas": "^4.21.4",
+    "@vercel/analytics": "^1.5.0",
     "hamburger-react": "^2.5.2",
     "lottie-react": "^2.4.1",
     "motion": "^12.19.1",

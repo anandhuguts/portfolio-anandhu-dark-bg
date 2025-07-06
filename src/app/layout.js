@@ -3,6 +3,8 @@ import Navigation from "./_components/Navigation";
 import { Outfit } from "next/font/google";
 import { Suspense } from "react";
 import Spinner from "./_sub components/Spinner";
+import Footer from "./_components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -22,6 +24,8 @@ export default function RootLayout({ children }) {
         <main>
           <Suspense fallback={<Spinner />}>{children}</Suspense>
         </main>
+        <Footer />
+        <Analytics />
       </body>
     </html>
   );

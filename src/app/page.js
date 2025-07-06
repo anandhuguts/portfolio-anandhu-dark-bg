@@ -13,7 +13,6 @@ export default async function Page() {
       <Skills />
       <Projects />
       <Myspace />
-      <Footer />
     </main>
   );
 }
