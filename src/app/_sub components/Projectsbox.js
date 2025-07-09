@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ScrollProjects({ projects }) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -175,14 +176,14 @@ export default function ScrollProjects({ projects }) {
                   ))}
                 </div>
                 <div className="flex items-center gap-5 mt-7">
-                  <a
-                    href={
-                      projects[activeIndex].website
-                        ? projects[activeIndex].website
-                        : "#"
-                    }
+                  <Link
+                    // href={
+                    //   projects[activeIndex].website
+                    //     ? projects[activeIndex].website
+                    //     : "#"
+                    // }
+                    href={`/projects/${projects[activeIndex].id}`}
                     onClick={isUIUX ? (e) => e.preventDefault() : undefined}
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block"
                   >
@@ -234,30 +235,32 @@ export default function ScrollProjects({ projects }) {
                         </svg>
                       )}
                     </button>
-                  </a>
+                  </Link>
                   <div className="flex items-center gap-3">
-                    {(projects[activeIndex].category === "UI/UX Design" ||
-                      projects[activeIndex].category === "Web Development") && (
-                      <a
-                        href={
-                          projects[activeIndex].figma
-                            ? projects[activeIndex].figma
-                            : ""
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block"
-                      >
-                        <div className="relative w-[30px] h-[30px]">
-                          <Image
-                            src="/figma logo.svg" // Make sure it's in the `public` folder
-                            alt="Logo"
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                      </a>
-                    )}
+                    {projects[activeIndex].figma &&
+                      (projects[activeIndex].category === "UI/UX Design" ||
+                        projects[activeIndex].category ===
+                          "Web Development") && (
+                        <a
+                          href={
+                            projects[activeIndex].figma
+                              ? projects[activeIndex].figma
+                              : ""
+                          }
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block"
+                        >
+                          <div className="relative w-[30px] h-[30px]">
+                            <Image
+                              src="/figma logo.svg" // Make sure it's in the `public` folder
+                              alt="Logo"
+                              fill
+                              className="object-contain"
+                            />
+                          </div>
+                        </a>
+                      )}
                     {projects[activeIndex].category === "Web Development" && (
                       <a
                         href={
@@ -349,7 +352,6 @@ export default function ScrollProjects({ projects }) {
                     project.category === "Web Development") && (
                     <a
                       href={project.figma ? project.figma : ""}
-                      target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block"
                     >
@@ -382,14 +384,13 @@ export default function ScrollProjects({ projects }) {
                     </a>
                   )}
                 </div>
-                <a
-                  href={project.website ? project.website : ""}
+                <Link
+                  href={`/projects/${project.id}`}
                   onClick={
                     project.category === "UI/UX Design"
                       ? (e) => e.preventDefault()
                       : undefined
                   }
-                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block"
                 >
@@ -443,7 +444,7 @@ export default function ScrollProjects({ projects }) {
                       </svg>
                     )}
                   </button>
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>

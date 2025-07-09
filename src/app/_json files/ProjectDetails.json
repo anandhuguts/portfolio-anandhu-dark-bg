@@ -1,0 +1,312 @@
+[
+  {
+    "id": "The-Wild-Oasis-Cabin-Booking-App",
+    "title": "The Wild Oasis - Cabin Booking App",
+    "image": "/cabins.png",
+    "github": "https://github.com/anandhuguts/cabin-website",
+    "website": "https://cabin-website-black.vercel.app/",
+    "description": "A full-stack cabin booking app where users can explore, reserve, and manage luxury cabins. Built with Next.js, Supabase, and Google Auth, it offers a secure and seamless user experience.",
+    "tech": [
+      { "icons": "/skill-icons_nextjs-light.svg", "name": "NextJS" },
+      { "icons": "/tailwind.svg", "name": "Tailwind CSS" },
+      { "icons": "/skill-icons_supabase-dark.svg", "name": "Supabase" },
+      { "icons": "/googleauth.svg", "name": "Google Auth" },
+      { "icons": "/skill-icons_vercel-dark.svg", "name": "Vercel" }
+    ],
+    "problem": "Creating a modern and efficient cabin booking platform where users can explore cabins, log in securely, and reserve stays — all while managing their country profile. The goal was to deliver a smooth user experience with real-time interactions and modern design.",
+    "keyFeatures": [
+      {
+        "featureName": "Real-time Reservations",
+        "featureDetails": "Users can book cabins for specific dates with real-time availability updates using Supabase."
+      },
+      {
+        "featureName": "Google Authentication",
+        "featureDetails": "Secure login and account creation using Google Auth for smooth onboarding."
+      },
+      {
+        "featureName": "Country-based Profile",
+        "featureDetails": "Users can set and manage their country information in their profile."
+      },
+      {
+        "featureName": "Mobile Responsive",
+        "featureDetails": "Fully responsive layout optimized for desktop, tablet, and mobile devices."
+      }
+    ],
+    "designProcess": {
+      "processTitile": "User-Centered Design",
+      "process": [
+        {
+          "title": "User Research",
+          "description": "Researched similar booking apps to identify user expectations and pain points."
+        },
+        {
+          "title": "Wireframing",
+          "description": "Created wireframes in Figma with a focus on clarity and ease of navigation."
+        },
+        {
+          "title": "Usability Testing",
+          "description": "Tested UI with a few users and improved form flows and calendar booking."
+        },
+        {
+          "title": "Booking UX Focus",
+          "description": "Simplified the country input and time-slot selection for intuitive interactions."
+        }
+      ],
+      "result": "Delivered a clean, intuitive, and fully responsive booking experience that prioritizes usability and simplicity."
+    },
+    "development": {
+      "frontend": "Next.js (App Router) with server-side rendering",
+      "styling": "Tailwind CSS with utility-first responsive design",
+      "hosting": "Deployed on Vercel for optimal performance",
+      "animation": "Framer Motion used for smooth UI transitions",
+      "perfomace": "Lighthouse performance score above 95 with optimized assets and lazy loading"
+    },
+    "challenges": [
+      {
+        "question": "How to handle real-time booking updates without refreshing?",
+        "solution": "Integrated Supabase’s real-time features to automatically update cabin availability."
+      },
+      {
+        "question": "How to simplify user login securely?",
+        "solution": "Used Google Auth via Supabase to implement one-click secure login without passwords."
+      }
+    ],
+    "whatIlearned": [
+      "How to build real-time features using Supabase",
+      "Implementing secure login with Google Auth",
+      "Optimizing booking flows for a seamless user experience",
+      "Handling calendar-based reservations in React"
+    ]
+  },
+  {
+    "id": "Portfolio-Website",
+    "title": "Portfolio Website",
+    "image": "/portfoliodark.png",
+    "figma": "https://www.figma.com/design/brEC5PuMwlkSmVRyFzPrdL/portfolio-anandhu-Design-2?node-id=0-1&m=dev&t=MkPMtY8lHrJsU506-1",
+    "github": "https://github.com/anandhuguts/portfolio-anandhu-dark-bg",
+    "description": "A personal portfolio website to showcase my skills, projects, and experience as a MERN Stack Developer and UI/UX Designer. Built using Next.js and designed in Figma, this project reflects my passion for clean, intuitive interfaces and modern development best practices.",
+    "tech": [
+      { "icons": "/skill-icons_nextjs-light.svg", "name": "NextJS" },
+      { "icons": "/tailwind.svg", "name": "Tailwind" },
+      {
+        "icons": "/streamline-logos_framer-logo-block.svg",
+        "name": "Framer Motion"
+      },
+      { "icons": "/skill-icons_vercel-dark.svg", "name": "Vercel" }
+    ],
+    "problem": "To create a digital portfolio that not only showcases my UI/UX and full-stack skills but also allows real-time interaction through user feedback. The challenge was combining elegant design with modern features like Google authentication, project filters, and a smooth UX.",
+    "keyFeatures": [
+      {
+        "featureName": "Google Authentication",
+        "featureDetails": "Visitors can sign in via Google to interact and leave feedback."
+      },
+      {
+        "featureName": "Feedback System",
+        "featureDetails": "Users can leave comments and suggestions for each project."
+      },
+      {
+        "featureName": "Responsive & Accessible UI",
+        "featureDetails": "Fully responsive layout across desktop, tablet, and mobile."
+      },
+      {
+        "featureName": "Framer Motion Animations",
+        "featureDetails": "Used for page transitions and subtle motion effects."
+      }
+    ],
+    "designProcess": {
+      "processTitile": "Clean, Modern & Functional",
+      "process": [
+        {
+          "title": "Mobile-first Wireframing",
+          "description": "Designed wireframes and UI mockups in Figma with a mobile-first approach."
+        },
+        {
+          "title": "UX Enhancements",
+          "description": "Focused on clarity, hierarchy, and subtle animations to enhance experience."
+        },
+        {
+          "title": "Component Analysis",
+          "description": "Broke down Hulu’s layout into reusable sections and UI patterns."
+        },
+        {
+          "title": "Responsive Design",
+          "description": "Manually implemented media queries for layout adaptability across devices."
+        }
+      ],
+
+      "result": "A visually appealing and highly functional portfolio site that also works as a live resume and interaction hub."
+    },
+    "development": {
+      "frontend": "Built with Next.js (App Router).",
+      "styling": "Tailwind CSS for rapid UI building.",
+      "hosting": "Deployed on Vercel with instant preview and updates.",
+      "animation": "Framer Motion used for microinteractions and section animations.",
+      "perfomace": "Optimized using lazy loading, dynamic imports, and a high Lighthouse score."
+    },
+    "challenges": [
+      {
+        "question": "How to allow users to leave feedback securely?",
+        "solution": "Implemented Google OAuth so only authenticated users can submit messages."
+      },
+      {
+        "question": "How to make the portfolio scalable and maintainable?",
+        "solution": "Created modular JSON-based project data to load dynamically with components."
+      }
+    ],
+    "whatIlearned": [
+      "How to structure and showcase real-world projects effectively.",
+      "Handling authentication and feedback features in a portfolio.",
+      "Animating layout transitions with Framer Motion.",
+      "Working with Suspense and loading states in Next.js."
+    ]
+  },
+  {
+    "id": "Hulu-Landing-Page-Clone",
+    "title": "Hulu Landing Page Clone",
+    "image": "/huluweb.png",
+    "figma": "https://www.figma.com/design/D0o810Rd1ALqQ5CSvp1pCy/huluwebsite?node-id=0-1&m=dev&t=DtYZumhET1st7i83-1",
+    "github": "https://github.com/anandhuguts/hulu-landing-page",
+    "website": "https://hulu-landing-page-eight.vercel.app/",
+    "description": "A pixel-perfect clone of Hulu’s homepage built using pure HTML, CSS, and JavaScript. This project emphasizes responsive layout, modern web standards, and dynamic UI without any libraries or frameworks.",
+    "tech": [
+      { "icons": "/HTML logo.svg", "name": "HTML" },
+      { "icons": "/javascript logo.svg", "name": "JavaScript" },
+      { "icons": "/file_type_css2 logo.svg", "name": "CSS" },
+      { "icons": "/skill-icons_vercel-dark.svg", "name": "Vercel" }
+    ],
+    "problem": "To recreate Hulu's official landing page using only vanilla technologies — no frameworks or component libraries — to build a responsive and interactive UI while improving mastery over core web development skills.",
+    "keyFeatures": [
+      {
+        "featureName": "Pixel-Perfect Layout",
+        "featureDetails": "Closely replicates Hulu's official UI using flexbox and CSS positioning."
+      },
+      {
+        "featureName": "Responsive Design",
+        "featureDetails": "Mobile, tablet, and desktop layouts using media queries."
+      },
+      {
+        "featureName": "Vanilla JavaScript Interactions",
+        "featureDetails": "Handled click events, plan tabs, and hover states manually."
+      },
+      {
+        "featureName": "Deployed on Vercel",
+        "featureDetails": "Hosted using Vercel for smooth performance and instant access."
+      }
+    ],
+    "designProcess": {
+      "processTitile": "Clone-First Design Process",
+      "process": [
+        {
+          "title": "Component Analysis",
+          "description": "Analyzed the original Hulu landing page structure and key UI elements."
+        },
+        {
+          "title": "Responsive Layout in Code",
+          "description": "Built layout and responsiveness manually using dev tools and vanilla CSS."
+        }
+      ],
+      "result": "A clean, responsive, and interactive landing page built entirely from scratch."
+    },
+    "development": {
+      "frontend": "Built entirely with HTML, CSS, and JavaScript.",
+      "styling": "Custom CSS using Flexbox and media queries.",
+      "hosting": "Deployed via Vercel with GitHub integration.",
+      "animation": "Hover and tab switch effects with pure JavaScript.",
+      "perfomace": "Lightweight and fast with no third-party dependencies."
+    },
+    "challenges": [
+      {
+        "question": "How to replicate Hulu's layout with only CSS?",
+        "solution": "Used Flexbox strategically and aligned elements using position, z-index, and box shadows."
+      },
+      {
+        "question": "How to create tab-switching behavior without libraries?",
+        "solution": "Implemented manual DOM manipulation using event listeners and class toggling in JavaScript."
+      }
+    ],
+    "whatIlearned": [
+      "Mastering layout with Flexbox and media queries.",
+      "Creating responsive UIs without any frameworks.",
+      "Manipulating the DOM and handling events in vanilla JavaScript.",
+      "Deploying static sites with Vercel."
+    ]
+  },
+  {
+    "id": "React-Portfolio",
+    "title": "React Portfolio (Single Page App)",
+    "image": "/blueportfolio.png",
+    "website": "https://anandhu-portfolio.vercel.app/",
+    "figma": "https://www.figma.com/design/prq0DdRPdMXo8hPMQzQnoZ/anandhu-portfolio-website?node-id=0-1&m=dev&t=EPOTzZFyRCjWlPzx-1",
+    "github": "https://github.com/anandhuguts/anandhu-portfolio",
+    "description": "A minimalist single-page portfolio website created using React.js, focused on smooth UI/UX and component-driven design. Designed in Figma, the site features scroll-based navigation and an elegant, modern layout.",
+    "tech": [
+      { "icons": "/reacticon.svg", "name": "React" },
+      { "icons": "/tailwind.svg", "name": "Tailwind" },
+      {
+        "icons": "/streamline-logos_framer-logo-block.svg",
+        "name": "Framer Motion"
+      },
+      { "icons": "/skill-icons_vercel-dark.svg", "name": "Vercel" }
+    ],
+    "problem": "To build a fast, responsive portfolio using React with smooth scrolling and clean transitions, allowing visitors to easily explore my background, projects, and contact information — all in a single-page layout.",
+    "keyFeatures": [
+      {
+        "featureName": "Component-Based Architecture",
+        "featureDetails": "Built with reusable components using React and React Hooks."
+      },
+      {
+        "featureName": "Smooth Scroll Navigation",
+        "featureDetails": "Implemented using react-scroll for seamless section transitions."
+      },
+      {
+        "featureName": "Framer Motion Animations",
+        "featureDetails": "Subtle animations added for interactivity and polish."
+      },
+      {
+        "featureName": "Custom Figma Design",
+        "featureDetails": "UI/UX designed from scratch in Figma for a consistent experience."
+      }
+    ],
+    "designProcess": {
+      "processTitile": "Design-to-Code Workflow",
+      "process": [
+        {
+          "title": "UX Planning",
+          "description": "Sketched layout and user flow in Figma."
+        },
+        {
+          "title": "Component Development",
+          "description": "Translated design into responsive React components."
+        },
+        {
+          "title": "UI Polish",
+          "description": "Polished interactions with Framer Motion and Tailwind."
+        }
+      ],
+      "development": {
+        "frontend": "Built using React.js with a focus on modularity.",
+        "styling": "Styled entirely with Tailwind CSS utility classes.",
+        "hosting": "Deployed on Vercel with GitHub integration.",
+        "animation": "Section transitions and reveal effects with Framer Motion.",
+        "perfomace": "Optimized rendering and lazy loading for improved load times."
+      },
+      "challenges": [
+        {
+          "question": "How to implement smooth scrolling between sections?",
+          "solution": "Used the `react-scroll` library for linking and animated scrolling."
+        },
+        {
+          "question": "How to create a lightweight yet elegant layout?",
+          "solution": "Focused on minimalism and dark theme with just enough animation for clarity."
+        }
+      ],
+      "whatIlearned": [
+        "Working with React components and props.",
+        "Using Tailwind CSS for utility-first styling.",
+        "Implementing animations with Framer Motion.",
+        "Smooth scrolling with react-scroll.",
+        "Deploying React apps on Vercel."
+      ]
+    }
+  }
+]
