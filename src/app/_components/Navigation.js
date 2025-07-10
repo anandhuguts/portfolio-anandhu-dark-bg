@@ -14,6 +14,7 @@ const navItems = [
 
 function Navigation() {
   const pathname = usePathname();
+  const isActive = pathname.startsWith("/projects");
 
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -34,29 +35,36 @@ function Navigation() {
       </Link>
 
       <ul className=" md:flex hidden  gap-9  px-10 py-2.5 bg-black/70 backdrop-blur-sm text-[#a1a1a1]  rounded-full font-outfit font-regular border border-[#a1a1a1]">
-        {navItems.map((item) => (
-          <li key={item.name} className="relative ">
-            <Link
-              style={
-                pathname === item.href
-                  ? { textShadow: "0px 25px 15.2px rgba(255, 255, 255)" }
-                  : {}
-              }
-              href={item.href}
-              className={` transition-colors duration-100 ease-in-out ${
-                pathname === item.href
-                  ? "text-[#FAFAFA]"
-                  : "text-[#B1B1B1] hover:text-white"
-              }`}
-            >
-              {item.name}
-              {/* Underline */}
-              {pathname === item.href && (
-                <span className="absolute top-8.5 left-1/2 -translate-x-1/2 w-10 h-[3px] bg-white rounded-full transition-all duration-300" />
-              )}
-            </Link>
-          </li>
-        ))}
+        {navItems.map((item) => {
+          const isActive =
+            item.href === "/projects"
+              ? pathname.startsWith("/projects")
+              : pathname === item.href;
+
+          return (
+            <li key={item.name} className="relative ">
+              <Link
+                style={
+                  isActive
+                    ? { textShadow: "0px 25px 15.2px rgba(255, 255, 255)" }
+                    : {}
+                }
+                href={item.href}
+                className={` transition-colors duration-100 ease-in-out ${
+                  isActive
+                    ? "text-[#FAFAFA]"
+                    : "text-[#B1B1B1] hover:text-white"
+                }`}
+              >
+                {item.name}
+                {/* Underline */}
+                {isActive && (
+                  <span className="absolute top-8.5 left-1/2 -translate-x-1/2 w-10 h-[3px] bg-white rounded-full transition-all duration-300" />
+                )}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
       <a href="mailto:anandhup059@gmail.com" className=" md:block hidden">
         <svg

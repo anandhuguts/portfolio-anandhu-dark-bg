@@ -17,7 +17,7 @@ export default function FeatureAccordion({ features }) {
           className="border-b border-[#454545] py-2.5"
         >
           <Accordion.Header>
-            <Accordion.Trigger className="flex w-full justify-between items-center font-medium text-[18px]">
+            <Accordion.Trigger className="flex w-full justify-between items-center font-medium  sm:text-[18px] text-[16px]">
               <span>{feature.featureName}</span>
               <ChevronDownIcon className="transition-transform duration-200 AccordionChevron" />
             </Accordion.Trigger>
