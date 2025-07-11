@@ -107,7 +107,7 @@ export default function Stack({
                 height: cardDimensions.height,
               }}
             >
-              <Image
+              <img
                 src={card.img}
                 alt={`card-${card.id}`}
                 className="w-full h-full object-cover pointer-events-none"

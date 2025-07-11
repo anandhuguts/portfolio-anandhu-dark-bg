@@ -1,40 +1,69 @@
 "use client";
 
-import { useSession, signIn, signOut } from "next-auth/react";
-import { useState } from "react";
+import { signIn, signOut } from "next-auth/react";
+import { useState, useTransition } from "react";
+import { submitFeedback } from "../feedback/action";
 
-function Goolelogin() {
-  const { data: session } = useSession();
+function Goolelogin({ session, setCommentList }) {
   const [message, setMessage] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
-  const handleSubmit = async (e) => {
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   const messageData = {
+  //     message,
+  //     name: session?.user?.name,
+  //     email: session?.user?.email,
+  //     image: session?.user?.image,
+  //   };
+  //   setIsSubmitting(true);
+
+  //   const res = await fetch("/api/feedback", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(messageData),
+  //   });
+
+  //   const data = await res.json();
+  //   if (data.success) {
+  //     setMessage("");
+  //     alert("Feedback saved ✅");
+  //   } else {
+  //     alert("Failed: " + data.error);
+  //   }
+  //   setIsSubmitting(false);
+  // };
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    const messageData = {
+    if (!message.trim()) return;
+
+    const payload = {
       message,
       name: session?.user?.name,
       email: session?.user?.email,
       image: session?.user?.image,
     };
-    setIsSubmitting(true);
 
-    const res = await fetch("/api/feedback", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(messageData),
+    startTransition(async () => {
+      try {
+        const res = await submitFeedback(payload);
+        if (res.success) {
+          setMessage("");
+
+          setCommentList((prev) => [res.feedback, ...prev]);
+        } else {
+          alert("Failed to submit feedback.");
+        }
+      } catch (error) {
+        console.error(error);
+        alert("Something went wrong.");
+      }
     });
-
-    const data = await res.json();
-    if (data.success) {
-      setMessage("");
-      alert("Feedback saved ✅");
-    } else {
-      alert("Failed: " + data.error);
-    }
-    setIsSubmitting(false);
   };
 
   if (session) {
@@ -52,11 +81,11 @@ function Goolelogin() {
           placeholder="Type your comment..."
         ></textarea>
         <button
-          disabled={isSubmitting}
+          disabled={isPending}
           className="absolute right-0 bottom-0 mb-4 mr-4 pb-2 pt-2 pl-4 pr-4 bg-primary rounded-[9px] text-black"
           type="submit"
         >
-          {isSubmitting ? "Submitting..." : "Submit"}
+          {isPending ? "Submitting..." : "Submit"}
         </button>
       </form>
     );
@@ -68,7 +97,7 @@ function Goolelogin() {
       </p>
       <button
         onClick={() => signIn("google")}
-        className="bg-primary text-[#0A0A0A] text-[18px] px-6 py-3 rounded-lg hover:bg-[#454545] transition-colors flex items-center gap-2 mt-2.5"
+        className="bg-primary text-[#0A0A0A] text-[18px] px-6 py-3 rounded-lg hover:bg-[#454545] transition-colors flex items-center gap-2 mt-4"
       >
         <svg
           width="17"

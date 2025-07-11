@@ -115,7 +115,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #000; /* optional: background */
+  /* optional: background */
 }
 @keyframes shadowMove {
   0% {
