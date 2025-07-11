@@ -283,30 +283,31 @@
           "description": "Polished interactions with Framer Motion and Tailwind."
         }
       ],
-      "development": {
-        "frontend": "Built using React.js with a focus on modularity.",
-        "styling": "Styled entirely with Tailwind CSS utility classes.",
-        "hosting": "Deployed on Vercel with GitHub integration.",
-        "animation": "Section transitions and reveal effects with Framer Motion.",
-        "perfomace": "Optimized rendering and lazy loading for improved load times."
+      "result": "A clean, responsive, and interactive landing page built entirely from scratch."
+    },
+    "development": {
+      "frontend": "Built using React.js with a focus on modularity.",
+      "styling": "Styled entirely with Tailwind CSS utility classes.",
+      "hosting": "Deployed on Vercel with GitHub integration.",
+      "animation": "Section transitions and reveal effects with Framer Motion.",
+      "perfomace": "Optimized rendering and lazy loading for improved load times."
+    },
+    "challenges": [
+      {
+        "question": "How to implement smooth scrolling between sections?",
+        "solution": "Used the `react-scroll` library for linking and animated scrolling."
       },
-      "challenges": [
-        {
-          "question": "How to implement smooth scrolling between sections?",
-          "solution": "Used the `react-scroll` library for linking and animated scrolling."
-        },
-        {
-          "question": "How to create a lightweight yet elegant layout?",
-          "solution": "Focused on minimalism and dark theme with just enough animation for clarity."
-        }
-      ],
-      "whatIlearned": [
-        "Working with React components and props.",
-        "Using Tailwind CSS for utility-first styling.",
-        "Implementing animations with Framer Motion.",
-        "Smooth scrolling with react-scroll.",
-        "Deploying React apps on Vercel."
-      ]
-    }
+      {
+        "question": "How to create a lightweight yet elegant layout?",
+        "solution": "Focused on minimalism and dark theme with just enough animation for clarity."
+      }
+    ],
+    "whatIlearned": [
+      "Working with React components and props.",
+      "Using Tailwind CSS for utility-first styling.",
+      "Implementing animations with Framer Motion.",
+      "Smooth scrolling with react-scroll.",
+      "Deploying React apps on Vercel."
+    ]
   }
 ]

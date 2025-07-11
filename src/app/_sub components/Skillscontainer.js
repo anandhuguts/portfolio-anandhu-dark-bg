@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 function Skillscontainer({ skills, index }) {
-  console.log(skills);
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
