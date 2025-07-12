@@ -8,6 +8,7 @@ export default function ScrollProjects({ projects }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const sectionRefs = useRef([]);
   const isUIUX = projects[activeIndex].category === "UI/UX Design";
+  const isWeb = projects[activeIndex].category === "Web Development";
 
   // useEffect(() => {
   //   const observer = new IntersectionObserver(
@@ -177,12 +178,12 @@ export default function ScrollProjects({ projects }) {
                 </div>
                 <div className="flex items-center gap-5 mt-7">
                   <Link
-                    // href={
-                    //   projects[activeIndex].website
-                    //     ? projects[activeIndex].website
-                    //     : "#"
-                    // }
-                    href={`/projects/${projects[activeIndex].id}`}
+                    href={
+                      isWeb
+                        ? `/projects/${projects[activeIndex].id}`
+                        : projects[activeIndex].website
+                    }
+                    // href={`/projects/${projects[activeIndex].id}`}
                     onClick={isUIUX ? (e) => e.preventDefault() : undefined}
                     rel="noopener noreferrer"
                     className="inline-block"
@@ -193,7 +194,7 @@ export default function ScrollProjects({ projects }) {
                       }  text-[16px]  flex items-center px-5 text-black py-2 rounded-full gap-2.5 `}
                     >
                       {projects[activeIndex].category === "Web Development"
-                        ? "Visit Project"
+                        ? "View More"
                         : projects[activeIndex].category === "UI/UX Design"
                         ? "Case Study"
                         : "Behance Portfolio"}
@@ -385,7 +386,11 @@ export default function ScrollProjects({ projects }) {
                   )}
                 </div>
                 <Link
-                  href={`/projects/${project.id}`}
+                  href={
+                    project.category === "Web Development"
+                      ? `/projects/${project.id}`
+                      : project.website
+                  }
                   onClick={
                     project.category === "UI/UX Design"
                       ? (e) => e.preventDefault()
@@ -402,7 +407,7 @@ export default function ScrollProjects({ projects }) {
                     } font-medium max-[865px]:text-[18px] max-[428px]:!text-[14px] text-[16px] max-[428px]:!p-2.5  flex items-center px-5 text-black py-2 rounded-full gap-2.5`}
                   >
                     {project.category === "Web Development"
-                      ? "Visit Project"
+                      ? "View More"
                       : project.category === "UI/UX Design"
                       ? "Case Study"
                       : "Behance Portfolio"}

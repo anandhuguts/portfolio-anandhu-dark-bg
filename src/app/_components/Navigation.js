@@ -8,8 +8,8 @@ import { HamburgerButton } from "../_sub components/Hamburgerbutton";
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
-  { name: "About", href: "/about" },
   { name: "Feedback", href: "/feedback" },
+  { name: "About", href: "/about" },
 ];
 
 function Navigation() {

@@ -59,7 +59,7 @@
       "styling": "Tailwind CSS with utility-first responsive design",
       "hosting": "Deployed on Vercel for optimal performance",
       "animation": "Framer Motion used for smooth UI transitions",
-      "perfomace": "Lighthouse performance score above 95 with optimized assets and lazy loading"
+      "perfomace": "Optimized using lazy loading, dynamic imports, and a high Lighthouse score."
     },
     "challenges": [
       {
@@ -92,6 +92,7 @@
         "icons": "/streamline-logos_framer-logo-block.svg",
         "name": "Framer Motion"
       },
+      { "icons": "googleauth.svg", "name": "Google Auth" },
       { "icons": "/skill-icons_vercel-dark.svg", "name": "Vercel" }
     ],
     "problem": "To create a digital portfolio that not only showcases my UI/UX and full-stack skills but also allows real-time interaction through user feedback. The challenge was combining elegant design with modern features like Google authentication, project filters, and a smooth UX.",
@@ -141,7 +142,7 @@
       "styling": "Tailwind CSS for rapid UI building.",
       "hosting": "Deployed on Vercel with instant preview and updates.",
       "animation": "Framer Motion used for microinteractions and section animations.",
-      "perfomace": "Optimized using lazy loading, dynamic imports, and a high Lighthouse score."
+      "perfomace": "Lighthouse performance score above 91+ with optimized assets and lazy loading"
     },
     "challenges": [
       {

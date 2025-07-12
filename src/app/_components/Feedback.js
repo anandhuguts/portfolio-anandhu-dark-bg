@@ -10,7 +10,7 @@ function Feedback({ session, comments }) {
   return (
     <section className="w-full font-outfit text-primary px-5 sm:pb-40 pb-17">
       <div className="mx-auto flex flex-col">
-        <h2 className="text-center font-semibold sm:text-[48px] text-[42px] ">
+        <h2 className="text-center font-semibold sm:text-[48px] text-[42px] max-[428px]:text-[16.5px]">
           Share Your Thoughts
         </h2>
         <p className="text-secondary text-[18px] max-[428px]:text-[16.5px]  font-normal mt-2 text-center">

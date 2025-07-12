@@ -2,7 +2,7 @@
   {
     "id": "The-Wild-Oasis-Cabin-Booking-App",
     "title": "The Wild Oasis - Cabin Booking App",
-    "description": "A full-stack cabin booking app where users can explore, reserve, and manage luxury cabins. Built with Next.js, Supabase, and Google Auth, it offers a secure and seamless user experience.",
+    "description": "A full-stack booking application where users can browse available cabins, log in using Google Auth, and reserve dates through a date picker. Built with Next.js and Supabase, the app also allows users to view, edit, and delete their upcoming reservations with country tagging support.",
     "points": [
       "Supabase for real-time backend data",
       "Google Auth for secure login",
@@ -40,6 +40,7 @@
         "icons": "streamline-logos_framer-logo-block.svg",
         "name": "Framer Motion"
       },
+      { "icons": "googleauth.svg", "name": "Google Auth" },
       { "icons": "skill-icons_vercel-dark.svg", "name": "Vercel" }
     ],
     "category": "Web Development",

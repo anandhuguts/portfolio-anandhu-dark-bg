@@ -70,7 +70,7 @@ function Goolelogin({ session, setCommentList }) {
     return (
       <form
         onSubmit={handleSubmit}
-        className="relative w-full  min-h-[146px] bg-[#181818] border border-[#454545] rounded-[18px]  p-5 flex flex-col"
+        className="relative w-full  min-h-[146px] bg-[#181818] border border-[#454545] rounded-xl p-5 flex flex-col"
       >
         <textarea
           name="thoughts"

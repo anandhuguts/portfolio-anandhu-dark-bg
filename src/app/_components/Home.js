@@ -36,7 +36,7 @@ function Home() {
       <div className="mt-5  font-medium flex gap-7 max-[428px]:flex-col max-[428px]:items-center  max-[428px]:gap-4">
         <ContactButton />
         <a
-          href="https://drive.google.com/file/d/160-4h6GyyokJ4g8c76S6rASr8bRD90U2/view?usp=sharing"
+          href="https://drive.google.com/file/d/1irlFr3WLnXShnbvWjIx9rsSEdLXoXfQC/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer "
         >
