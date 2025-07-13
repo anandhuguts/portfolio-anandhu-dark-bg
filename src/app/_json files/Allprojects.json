@@ -79,6 +79,7 @@
       "Created a full interactive prototype in Figma."
     ],
     "image": "/outfitted mockup.png",
+    "website": "",
     "tech": [{ "icons": "figma logo.svg", "name": "Figma" }],
     "category": "UI/UX Design",
     "figma": "https://www.figma.com/design/EfyevtPr2RSIkLyOY9yhMp/e-commerce-app-ui?node-id=623-503&m=dev&t=bnB6FjeXSD78UCho-1"
@@ -93,6 +94,7 @@
       "Minimalist layout with earthy tones"
     ],
     "image": "/cabin.png",
+    "website": "",
     "tech": [{ "icons": "figma logo.svg", "name": "Figma" }],
     "category": "UI/UX Design",
     "figma": "https://www.figma.com/design/XvOsWLlnS2OLXNEeoLfThE/cabin-website?node-id=0-1&m=dev&t=eMjEBorme9yFIhdZ-1"

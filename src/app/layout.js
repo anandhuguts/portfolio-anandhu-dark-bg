@@ -1,7 +1,7 @@
 import "./globals.css";
 import Navigation from "./_components/Navigation";
 import { Outfit } from "next/font/google";
-import { Suspense } from "react";
+
 import Spinner from "./_sub components/Spinner";
 import Footer from "./_components/Footer";
 import { Analytics } from "@vercel/analytics/next";
@@ -21,9 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-[#0A0A0A] mx-auto">
         <Navigation />
-        <main>
-          <Suspense fallback={<Spinner />}>{children}</Suspense>
-        </main>
+        <main>{children}</main>
         <Footer />
         <Analytics />
       </body>

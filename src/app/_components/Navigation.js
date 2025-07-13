@@ -14,9 +14,7 @@ const navItems = [
 
 function Navigation() {
   const pathname = usePathname();
-  const isActive = pathname.startsWith("/projects");
 
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className=" flex  left-1/2 -translate-x-1/2 top-0 w-full max-w-[1495px] h-[44px] pt-10 px-7   xl:px-53 lg:px-40 items-center  justify-between mx-auto fixed z-50">
       <Link href="#">

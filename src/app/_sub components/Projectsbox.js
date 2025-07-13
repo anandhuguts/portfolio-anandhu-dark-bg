@@ -181,7 +181,7 @@ export default function ScrollProjects({ projects }) {
                     href={
                       isWeb
                         ? `/projects/${projects[activeIndex].id}`
-                        : projects[activeIndex].website
+                        : projects[activeIndex]?.website
                     }
                     // href={`/projects/${projects[activeIndex].id}`}
                     onClick={isUIUX ? (e) => e.preventDefault() : undefined}

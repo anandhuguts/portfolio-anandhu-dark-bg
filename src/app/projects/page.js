@@ -1,6 +1,7 @@
 import Projects from "@/app/_components/Projects";
 
-function page() {
+async function page() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   return (
     <div className="mt-30">
       <Projects />
