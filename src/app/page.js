@@ -5,8 +5,7 @@ import Overview from "./_components/Overview";
 import Projects from "./_components/Projects";
 import Skills from "./_components/Skills";
 
-export default async function Page() {
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+export default function Page() {
   return (
     <main>
       <Home />

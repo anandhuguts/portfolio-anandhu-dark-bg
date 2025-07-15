@@ -51,11 +51,11 @@ export default function Stack({
       : [
           {
             id: 1,
-            img: "/feedback.png",
+            img: "/stack.png",
           },
           {
             id: 2,
-            img: "ai.png",
+            img: "leftover.png",
           },
         ]
   );

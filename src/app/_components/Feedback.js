@@ -17,7 +17,7 @@ async function Feedback() {
     updatedAt: comment.updatedAt?.toISOString(),
   }));
   return (
-    <div className="w-full font-outfit text-primary px-5 sm:pb-40 pb-17">
+    <div className="w-full font-outfit text-primary  sm:pb-40 pb-17">
       <FeedbackComp session={session} comments={comments} />
     </div>
   );
