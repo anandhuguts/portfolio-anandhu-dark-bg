@@ -32,7 +32,7 @@ function Footer() {
           <ContactButton />
         </div>
       </div>
-      <div className=" absolute  left-1/2 -translate-x-1/2 bottom-7  flex z-10 w-full max-w-[1823px] justify-between px-5">
+      <div className=" absolute  left-1/2 -translate-x-1/2 bottom-7  flex  w-full max-w-[1823px] justify-between px-5">
         <h5 className="text-primary font-normal max-[500px]:text-[14px]">
           © 2025 Anandhu Prasad
         </h5>

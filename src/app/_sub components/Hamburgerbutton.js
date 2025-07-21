@@ -109,11 +109,19 @@ export const HamburgerButton = () => {
       <Hamburger toggled={isOpen} toggle={setOpen} color="#FAFAFA" size={25} />
 
       <div
-        className={`h-screen overflow-y-auto flex flex-col justify-between px-7 font-outfit absolute  left-0 w-full bg-[#0A0A0A] text-white z-50 transition-transform duration-500 ease-in-out pb-30 ${
+        className={`overflow-y-auto scrollbar-hide fixed h-screen  justify-between px-7 font-outfit top-0 left-0 flex flex-col w-full bg-[#0A0A0A] text-white z-50 transition-transform duration-500 ease-in-out pb-30 ${
           isOpen ? "block" : "hidden md:flex"
         }`}
       >
-        <ul className="pt-8 ">
+        <div className="absolute right-0 pr-5 pt-5">
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            color="#FAFAFA"
+            size={25}
+          />
+        </div>
+        <ul className="mt-20 ">
           {navItems.map((item) => (
             <li key={item.name} className="mt-[20px]">
               <Link

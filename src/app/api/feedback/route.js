@@ -35,7 +35,7 @@ export async function GET() {
   try {
     await connectToDatabase();
 
-    const allFeedback = await Feedback.find().sort({ createdAt: -1 }); // Optional: latest first
+    const allFeedback = await Feedback.find().sort({ createdAt: -1 });
 
     return Response.json({ success: true, data: allFeedback });
   } catch (error) {

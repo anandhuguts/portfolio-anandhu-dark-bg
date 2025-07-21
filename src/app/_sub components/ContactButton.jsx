@@ -34,7 +34,7 @@ export default function ContactButton() {
         onClick={() => setIsOpen(!isOpen)}
       ></div>
       <div
-        className={`font-outfit fixed w-full max-w-[600px] h-[416px] bg-backg z-40 bottom-0  left-1/2 -translate-x-1/2 rounded-t-[19px] border-t border-l border-r border-secondary transition-transform duration-500 px-5 ${
+        className={`font-outfit fixed w-full max-w-[600px] h-[416px] bg-backg z-100 bottom-0  left-1/2 -translate-x-1/2 rounded-t-[19px] border-t border-l border-r border-secondary transition-transform duration-500 px-5 ${
           isOpen ? "translate-y-0" : "translate-y-full"
         }`}
       >

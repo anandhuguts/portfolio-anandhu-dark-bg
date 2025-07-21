@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // Include all weights you use
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 export const metadata = {
