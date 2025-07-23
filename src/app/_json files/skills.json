@@ -12,6 +12,10 @@
     "icon": "javascript logo.svg"
   },
   {
+    "title": "TypeScript",
+    "icon": "devicon_typescript.svg"
+  },
+  {
     "title": "React JS",
     "icon": "reacticon.svg"
   },
@@ -22,6 +26,10 @@
   {
     "title": "Redux",
     "icon": "redux.svg"
+  },
+  {
+    "title": "Zustsand",
+    "icon": "devicon_zustand.svg"
   },
   {
     "title": "Tailwind",

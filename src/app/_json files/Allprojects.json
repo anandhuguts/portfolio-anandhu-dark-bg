@@ -117,30 +117,5 @@
     ],
     "category": "Graphic Design",
     "website": "https://www.behance.net/gallery/193019455/Graphic-design-portfolio-2024"
-  },
-
-  {
-    "id": "React-Portfolio",
-    "title": "React Portfolio (Single Page App)",
-    "description": "A minimalist single-page portfolio website created using React.js, focused on smooth UI/UX and component-driven design.",
-    "points": [
-      "Built with React Hooks and component-based architecture",
-      "Smooth scrolling using react-scroll",
-      "Designed from scratch in Figma"
-    ],
-    "image": "/blueportfolio.png",
-    "tech": [
-      { "icons": "reacticon.svg", "name": "React" },
-      { "icons": "tailwind.svg", "name": "Tailwind" },
-      {
-        "icons": "streamline-logos_framer-logo-block.svg",
-        "name": "Framer Motion"
-      },
-      { "icons": "skill-icons_vercel-dark.svg", "name": "Vercel" }
-    ],
-    "category": "Web Development",
-    "website": "https://anandhu-portfolio.vercel.app/",
-    "figma": "https://www.figma.com/design/prq0DdRPdMXo8hPMQzQnoZ/anandhu-portfolio-website?node-id=0-1&m=dev&t=EPOTzZFyRCjWlPzx-1",
-    "github": "https://github.com/anandhuguts/anandhu-portfolio"
   }
 ]

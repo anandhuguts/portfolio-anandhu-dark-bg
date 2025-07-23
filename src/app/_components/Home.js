@@ -33,7 +33,7 @@ function Home() {
         Hi, I&apos;m Anandhu Prasad — a&nbsp;
         <br className="sm:hidden block" /> <Typewriter />
       </h2>
-      <div className="mt-5  font-medium flex gap-7 max-[428px]:flex-col max-[428px]:items-center  max-[428px]:gap-4">
+      <div className="mt-5  font-medium flex gap-7  max-[428px]:items-center  max-[428px]:gap-4">
         <ContactButton />
         <a
           href="https://drive.google.com/file/d/1irlFr3WLnXShnbvWjIx9rsSEdLXoXfQC/view?usp=sharing"
